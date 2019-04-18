@@ -1,0 +1,260 @@
+.search{
+    min-width: 1200px;
+    height: 50px;
+    background: #da1010;
+}
+.search>div{
+    width: 1200px;
+    height: 50px;
+    margin: auto;
+}
+.search>div>a{
+    float: left;
+}
+.search_logo1{
+    width: 76px;
+    height: 26px;
+    margin-top: 12px;
+}
+.search_logo2{
+    width: 158px;
+    height: 21px;
+    margin: 16px 0 0 20px;
+}
+form{
+    float: left;
+    width: 448px;
+    height: 36px;
+    margin: 7px 0 0 345px;
+    background: #e14040;
+}
+form:hover{
+    background: white;
+}
+.searchTypeTitle{
+    width: 100px;
+    height: 36px;
+    float: left;
+    border-right: 1px solid #da1010;
+    cursor: pointer;
+}
+.searchTypeTitle>span{
+    float: left;
+    font-size: 13px;
+    line-height: 36px;
+    margin-left: 22px;
+    color: white;
+}
+.searchTypeTitle>img{
+    width: 13px;
+    height: 8px;
+    float: left;
+    margin: 14px 0 0 13px;
+}
+.searchType{
+    width: 100px;
+    height: 110px;
+    position: absolute;
+    top: 42px;
+    left: 608px;
+    background: white;
+    display: none;
+    cursor: auto;
+    z-index: 2;
+}
+.searchType>p{
+    float: left;
+    width: 100px;
+    height: 28px;
+    cursor: pointer;
+}
+.searchType img{
+    width: 13px;
+    height: 10px;
+    float: left;
+    margin: 9px 0 0 5px;
+}
+.searchType span{
+    color: #333333;
+    font-size: 13px;
+    line-height: 28px;
+    margin-left: 5px;
+}
+.searchType>p:hover{
+    background: #f2f3f7;
+}
+.searcher{
+    width: 294px;
+    height: 36px;
+    float: left;
+    border: none;
+    outline: none;
+    background: none;
+    padding-left: 5px;
+    font-size: 15px;
+}
+.submit1{
+    width: 48px;
+    height: 36px;
+    float: left;
+    border: none;
+    outline: none;
+    background: url("../images/home_searchButton1.png") no-repeat;
+    cursor: pointer;
+}
+.submit2{
+    width: 48px;
+    height: 36px;
+    float: left;
+    border: none;
+    outline: none;
+    background: url("../images/home_searchButton2.png") no-repeat;
+    cursor: pointer;
+}
+.bigImg{
+    height: 485px;
+    background-image: url("../images/home_bigImg.png");
+    background-repeat: no-repeat;
+    background-position-x: 0;
+}
+.bigDiv{
+    background: #9d04fc;
+    overflow: hidden;
+}
+.content{
+    width: 1200px;
+    margin: auto;
+}
+.content>h6{
+    float: left;
+    width: 1168px;
+    height: 54px;
+    background: #ff3333;
+    font-size: 18px;
+    line-height: 54px;
+    padding-left: 32px;
+    color: white;
+    font-family: '宋体';
+}
+.content>div{
+    width: 282px;
+    height: 457px;
+    float: left;
+    border: 1px solid #d2d2d2;
+    margin: 0 21px 21px 0;
+    background: white;
+}
+.content>div:hover{
+    border-color: red;
+}
+.contentImg{
+    width: 282px;
+    height: 282px;
+    float: left;
+}
+.content_yh{
+    float: left;
+    width: 282px;
+    height: 40px;
+    background: #dd0031;
+}
+.content_yh>img{
+    float: left;
+}
+.content_yh>span{
+    float: left;
+    width: 136px;
+    height: 18px;
+    border: 1px solid #fb0e37;
+    border-radius: 6px;
+    background: white;
+    margin: 10px 0 0 4px;
+    font-size: 12px;
+    line-height: 18px;
+    color: #ff002a;
+    text-indent: 3px;
+}
+.contentName{
+    float: left;
+    margin: 8px 0 0 10px;
+    font-size: 14px;
+    color: #333333;
+}
+.contentName:hover{
+    color: #ff7300;
+}
+.content>div>img{
+    float: left;
+    margin: 19px 201px 0 10px;
+}
+.rmb{
+    color: #dd0031;
+    font-size: 14px;
+    float: left;
+    margin: 8px 0 0 14px;
+}
+.price{
+    color: #dd0031;
+    font-size: 20px;
+    float: left;
+    margin: 3px 0 0 2px;
+    font-weight: bold;
+}
+.unit{
+    color: #dd0031;
+    font-size: 12px;
+    float: left;
+    margin-top: 9px;
+}
+.oldPrice{
+    color: #aaaaaa;
+    font-size: 12px;
+    float: left;
+    text-decoration: line-through;
+    margin: 11px 0 0 7px;
+}
+.sole{
+    color: #666666;
+    float: right;
+    font-size: 12px;
+    margin: 11px 11px 0 0;
+}
+.buyNow{
+    width: 262px;
+    height: 31px;
+    float: left;
+    margin: 3px 10px 0;
+    background: #ff002a;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 31px;
+}
+nav{
+    width: 100px;
+    height: 400px;
+    position: fixed;
+    left: 10px;
+    background: lime;
+    display: none;
+}
+nav>span{
+    width: 100px;
+    height: 28px;
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+    color: white;
+}
+nav>span:hover{
+    background: white;
+    color: black;
+}
+.f05800{
+    background: #f05800;
+}
+.f1610d{
+    background: #f1610d;
+}

@@ -1,0 +1,94 @@
+.summary{
+    width: 1190px;
+    height: 167px;
+    margin: 11px auto 0;
+    background: #fef8e1;
+    border: 1px solid #fbe1a3;
+}
+.summary_left{
+    width: 310px;
+    overflow: hidden;
+    float: left;
+}
+.summary_all{
+    font-size: 14px;
+    line-height: 64px;
+    float: left;
+    margin-left: 29px;
+}
+.summary_all1{
+    font-size: 12px;
+    line-height: 66px;
+    float: left;
+    margin-left: 63px;
+}
+.summary_all2{
+    font-size: 12px;
+    line-height: 66px;
+    float: left;
+    margin-left: 10px;
+}
+.summary_right{
+    width: 250px;
+    overflow: hidden;
+    float: right;
+}
+.summary_allPrice{
+    float: right;
+    font-size: 12px;
+    margin: 28px 50px 0 0;
+    line-height: 12px;
+}
+.summary_allRunPrice{
+    float: right;
+    font-size: 12px;
+    margin: 15px 50px 0 0;
+    line-height: 12px;
+}
+.summary_shouldPay{
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    margin: 29px 0 0 8px;
+}
+.summary_shouldPayPrice{
+    float: left;
+    font-size: 16px;
+    color: #ff7300;
+    font-weight: bold;
+    margin: 28px 0 0 4px;
+    line-height: 12px;
+}
+.summary_yuan{
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 28px 0 0 5px;
+}
+.summary_hideName{
+    float: right;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 21px 69px 0 0;
+}
+#hideName{
+    float: right;
+    margin: 21px 5px 0 0;
+}
+.submitOrder{
+    width: 1190px;
+    height: 60px;
+    margin: 20px auto 0;
+    background: white;
+}
+.submitOrder>a{
+    width: 180px;
+    height: 60px;
+    float: right;
+    background: #ff6000;
+    color: white;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+}

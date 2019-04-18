@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../css/cssReset.css">
+        <link rel="stylesheet" href="../css/detail1.css">
+        <link rel="stylesheet" href="../css/detail2.css">
+        <link rel="stylesheet" href="../css/detail3.css">
+        <link rel="stylesheet" href="../css/detail4.css">
+        <link rel="stylesheet" href="../css/detail5.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <p>
+                    <span class="phone"><img src="../images/phone.png" alt=""></span>
+                    <a href="#" class="phone_link">手机阿里</a>
+                    <span class="welcome">欢迎来到阿里巴巴</span>
+                    <span class="redbage" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                            <img src="../images/redbage.png" alt="">
+                        </span>
+                    <a href="login.html" class="login" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                        请登录
+                    </a>
+                    <a href="register.html" class="register">免费注册</a>
+                </p>
+                <div class="redbageover" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                    <h3>先登录再采购，享更多权益！</h3>
+                    <img src="../images/true.png">
+                    <u class="u1">领取新人红包</u>
+                    <img src="../images/true.png">
+                    <u class="u2">享新人权益</u>
+                    <img src="../images/true.png">
+                    <u class="u3">更精准推荐</u>
+                    <img src="../images/true.png">
+                    <u class="u4">记录浏览足迹</u>
+                </div>
+                <div class="redbageover2" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()"></div>
+                <ul class="header_ul" id="header_ul">
+                    <li class="li1" onmouseover="headerOver(0)" onmouseout="headerOut(0)">
+                        <a href="../index.html">1688首页</a>
+                    </li>
+                    <li class="li2" onmouseover="headerOver(1)" onmouseout="headerOut(1)">
+                        <a href="#">我的阿里</a>
+                        <span></span>
+                        <div class="header_div1">
+                            <ul>
+                                <li class="header_div1_li1">
+                                    <dl>
+                                        <dt><a href="#">买家中心</a></dt>
+                                        <dd><a href="#">已买到货品</a></dd>
+                                        <dd><a href="#">优惠券</a></dd>
+                                        <dd><a href="#">发布询价单</a></dd>
+                                        <dd><a href="#">店铺动态</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div1_li2">
+                                    <dl>
+                                        <dt><a href="#">卖家中心</a></dt>
+                                        <dd><a href="#">已卖出货品</a></dd>
+                                        <dd><a href="#">发布供应产品</a></dd>
+                                        <dd><a href="#">管理供应产品</a></dd>
+                                        <dd><a href="#">管理旺铺</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div1_li3">
+                                    <dl>
+                                        <dt><a href="#">服务</a></dt>
+                                        <dd><a href="#">开店装修</a></dd>
+                                        <dd><a href="#">应用工具</a></dd>
+                                        <dd><a href="#">运营服务</a></dd>
+                                        <dd><a href="#">综合服务</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li3" onmouseover="headerOver(2)" onmouseout="headerOut(2)">
+                        <a href="#">进货单</a>
+                        <span class="number"></span>
+                        <span></span>
+                        <div class="header_div2">
+                            <div class="header_div2_top"><h6>进货单中暂未添加任何货品</h6></div>
+                            <div class="header_div2_bottom"><button>查看进货单</button></div>
+                        </div>
+                    </li>
+                    <li class="li4" onmouseover="headerOver(3)" onmouseout="headerOut(3)">
+                        <span class="star"></span>
+                        <a href="#">我的收藏</a>
+                        <span></span>
+                        <div class="header_div3">
+                            <ul>
+                                <li class="header_div3_li1">
+                                    <dl>
+                                        <dt><a href="#">货源</a></dt>
+                                        <dd><a href="#">收藏的货品</a></dd>
+                                        <dd><a href="#">铺货入淘的货品</a></dd>
+                                        <dd><a href="#">铺货入淘ERP的货品</a></dd>
+                                        <dd><a href="#">转发过的货品</a></dd>
+                                        <dd><a href="#">浏览足迹</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div3_li2">
+                                    <dl>
+                                        <dt><a href="#">供应商</a></dt>
+                                        <dd><a href="#">收藏的供应商</a></dd>
+                                        <dd><a href="#">收藏的服务</a></dd>
+                                        <dd><a href="#">交易过的供应商</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li5" onmouseover="headerOver(4)" onmouseout="headerOut(4)">
+                        <a href="#">诚信通官网</a>
+                        <span></span>
+                        <div class="header_div4">
+                            <ul class="header_div4_ul">
+                                <li onmouseover="headerDiv4Over(0)" onmouseout="headerDiv4Out(0)">
+                                    <div class="header_div4_div1"></div><a href="#">免费联系我们</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(1)" onmouseout="headerDiv4Out(1)">
+                                    <div class="header_div4_div2"></div><a href="#">功能体验馆</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(2)" onmouseout="headerDiv4Out(2)">
+                                    <div class="header_div4_div3"></div><a href="#">新会员申请</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(3)" onmouseout="headerDiv4Out(3)">
+                                    <div class="header_div4_div4"></div><a href="#">老会员续费</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(4)" onmouseout="headerDiv4Out(4)">
+                                    <div class="header_div4_div5"></div><a href="#">会员活动</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(5)" onmouseout="headerDiv4Out(5)">
+                                    <div class="header_div4_div6"></div><a href="#">我的诚信通</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li6" onmouseover="headerOver(5)" onmouseout="headerOut(5)">
+                        <a href="#">实力商家</a>
+                        <span></span>
+                        <div class="header_div5">
+                            <ul>
+                                <li><a href="#">实力品牌</a></li>
+                                <li><a href="#">实力工厂</a></li>
+                                <li><a href="#">商家入驻</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li7" onmouseover="headerOver(6)" onmouseout="headerOut(6)">
+                        <a href="#">我是供应商</a>
+                        <span></span>
+                        <div class="header_div6">
+                            <ul>
+                                <li><a href="#">成长中心</a></li>
+                                <li><a href="#">成功经验</a></li>
+                                <li><a href="#">热门活动</a></li>
+                                <li><a href="#">营销推广</a></li>
+                                <li><a href="#">本地服务</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li8" onmouseover="headerOver(7)" onmouseout="headerOut(7)">
+                        <a href="#">客服中心</a>
+                        <span></span>
+                        <div class="header_div7">
+                            <ul>
+                                <li><a href="#">买家客服</a></li>
+                                <li><a href="#">卖家客服</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li9" onmouseover="headerOver(8)" onmouseout="headerOut(8)">
+                        <a href="#">网站导航</a>
+                        <span></span>
+                        <div class="header_div8">
+                            <ul>
+                                <li class="header_div8_li1">
+                                    <dl>
+                                        <dt>行内市场</dt>
+                                        <dd><a href="#">女装</a></dd>
+                                        <dd><a href="#">男装</a></dd>
+                                        <dd><a href="#">内衣</a></dd>
+                                        <dd><a href="#">鞋靴</a></dd>
+                                        <dd><a href="#">箱包</a></dd>
+                                        <dd><a href="#">配饰</a></dd>
+                                        <dd><a href="#">运动户外</a></dd>
+                                        <dd><a href="#">母婴用品</a></dd>
+                                        <dd><a href="#">通知</a></dd>
+                                        <dd><a href="#">玩具</a></dd>
+                                        <dd><a href="#">工艺品</a></dd>
+                                        <dd><a href="#">宠物</a></dd>
+                                        <dd><a href="#">园艺</a></dd>
+                                        <dd><a href="#">日用百货</a></dd>
+                                        <dd><a href="#">办公文教</a></dd>
+                                        <dd><a href="#">汽车用品</a></dd>
+                                        <dd><a href="#">食品饮料</a></dd>
+                                        <dd><a href="#">餐饮生鲜</a></dd>
+                                        <dd><a href="#">家纺家饰</a></dd>
+                                        <dd><a href="#">家装建材</a></dd>
+                                        <dd><a href="#">美容化妆</a></dd>
+                                        <dd><a href="#">个护家清</a></dd>
+                                        <dd><a href="#">3C</a></dd>
+                                        <dd><a href="#">手机</a></dd>
+                                        <dd><a href="#">家电</a></dd>
+                                        <dd><a href="#">电工电气</a></dd>
+                                        <dd><a href="#">照片</a></dd>
+                                        <dd><a href="#">仪表</a></dd>
+                                        <dd><a href="#">包装</a></dd>
+                                        <dd><a href="#">印刷纸业</a></dd>
+                                        <dd><a href="#">电子元器件</a></dd>
+                                        <dd><a href="#">安防</a></dd>
+                                        <dd><a href="#">机械设备</a></dd>
+                                        <dd><a href="#">五金工具</a></dd>
+                                        <dd><a href="#">劳保</a></dd>
+                                        <dd><a href="#">橡胶原料</a></dd>
+                                        <dd><a href="#">化工原料</a></dd>
+                                        <dd><a href="#">精细化工</a></dd>
+                                        <dd><a href="#">钢材</a></dd>
+                                        <dd><a href="#">纺织皮革</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li2">
+                                    <dl>
+                                        <dt><a href="#">特色市场</a></dt>
+                                        <dd><a href="#">淘货源</a></dd>
+                                        <dd><a href="#">伙拼</a></dd>
+                                        <dd><a href="#">微商进货</a></dd>
+                                        <dd><a href="#">跨境专供</a></dd>
+                                        <dd><a href="#">进口货源</a></dd>
+                                        <dd><a href="#">工业品品牌站</a></dd>
+                                        <dd><a href="#">淘工厂</a></dd>
+                                        <dd><a href="#">源头好货</a></dd>
+                                        <dd><a href="#">实力优品</a></dd>
+                                        <dd><a href="#">产业带</a></dd>
+                                        <dd><a href="#">企业汇采</a></dd>
+                                        <dd class="lastdd"><a href="#">超级店</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li3">
+                                    <dl>
+                                        <dt>采购平台</dt>
+                                        <dd><a href="#">大企业采购</a></dd>
+                                        <dd class="lastdd"><a href="#">采购对接</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li4">
+                                    <dl>
+                                        <dt>以商会友</dt>
+                                        <dd><a href="#">行业资讯</a></dd>
+                                        <dd><a href="#">商友圈</a></dd>
+                                        <dd><a href="#">生意经</a></dd>
+                                        <dd><a href="#">阿里智库</a></dd>
+                                        <dd class="lastdd"><a href="#">1688商学院</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li5">
+                                    <dl>
+                                        <dt>常用工具</dt>
+                                        <dd><a href="#">商家工作台</a></dd>
+                                        <dd><a href="#">手机阿里买家版</a></dd>
+                                        <dd><a href="#">手机阿里卖家版</a></dd>
+                                        <dd><a href="#">阿里贷款</a></dd>
+                                        <dd><a href="#">阿里物流</a></dd>
+                                        <dd><a href="#">商机助理</a></dd>
+                                        <dd><a href="#">找货神器</a></dd>
+                                        <dd><a href="#">数字营销平台</a></dd>
+                                        <dd><a href="#">开放平台</a></dd>
+                                        <dd><a href="#">八载</a></dd>
+                                        <dd><a href="#">1688分销客</a></dd>
+                                        <dd><a href="#">1688创易秀</a></dd>
+                                        <dd class="lastdd"><a href="#">店小密</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li6">
+                                    <dl>
+                                        <dt>安全交易</dt>
+                                        <dd><a href="#">买家保障</a></dd>
+                                        <dd><a href="#">商家认证</a></dd>
+                                        <dd><a href="#">支付宝</a></dd>
+                                        <dd><a href="#">阿里网规</a></dd>
+                                        <dd class="lastdd"><a href="#">投诉举报</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <div class="header_div8_div">
+                                <h4><a href="#">更多内容 ></a></h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="inf">
+            <div>
+                <h1><a href="../index.html"><img src="../images/detail_logo.png" alt=""></a></h1>
+                <div class="company">
+                    <h6>
+                        <span class="companyName"><a href="#">宁波亚一恒电子科技有限公司</a></span>
+                        <a href="#" class="cheng"><img src="../images/cheng.png" alt=""></a>
+                        <span class="one">1</span>
+                        <span class="year">年</span>
+                        <a href="#" class="wangwang"><img src="../images/wangwang.gif" alt=""></a>
+                        <a href="#" class="companyImg"><img src="../images/companyImg.png" alt=""></a>
+                    </h6>
+                    <ul>
+                        <li>
+                            <span class="company_ul_title">货描</span>
+                            <span class="company_ul_value">3%↑</span>
+                        </li>
+                        <li>
+                            <span class="company_ul_title">响应</span>
+                            <span class="company_ul_value">9%↑</span>
+                        </li>
+                        <li>
+                            <span class="company_ul_title">发货</span>
+                            <span class="company_ul_value" style="color: green">18%↓</span>
+                        </li>
+                        <li style="border-left: 1px solid #eaeaea;">
+                            <span class="company_ul_title">回头率</span>
+                            <span class="company_ul_value">33%</span>
+                        </li>
+                    </ul>
+                    <span><img src="../images/detail_inf_down.png" alt=""></span>
+                    <div>
+                        <p>
+                            <a href="#" class="cd_companyName">宁波亚一恒电子科技有限公司</a>
+                            <a href="#" class="cd_cheng"><img src="../images/cheng.png" alt=""></a>
+                            <a href="#" class="cd_one">1</a>
+                            <a href="#" class="cd_year">年</a>
+                            <a href="#" class="cd_img"><img src="../images/companyImg.png" alt=""></a>
+                        </p>
+                        <ul class="cd_ul1">
+                            <li>
+                                <span class="cd_ul1_name">供应等级：</span>
+                                <a href="#"><img src="../images/cd_1.png" alt=""></a>
+                            </li>
+                            <li>
+                                <span class="cd_ul1_name">经营模式：</span>
+                                <span class="cd_ul1_value">生产厂家</span>
+                            </li>
+                            <li>
+                                <span class="cd_ul1_name">所在地区：</span>
+                                <span class="cd_ul1_value">浙江 宁波</span>
+                            </li>
+                            <li>
+                                <span class="cd_ul1_name">交易勋章：</span>
+                                <a href="#"><img src="../images/cd_2.png" alt=""></a>
+                            </li>
+                        </ul>
+                        <ul class="cd_ul2">
+                            <li>
+                                <span class="cd_ul2_name">买家服务能力</span>
+                                <span class="cd_ul2_value">与同行业均值相比</span>
+                            </li>
+                            <li>
+                                <span class="cd_ul2_name">货描相符：</span>
+                                <a href="#" class="cd_ul2_value" id="cd_ul2_value1">
+                                    <span class="cd_ul2_value1" id="cd_ul2_value11">高于均值</span>
+                                    <span class="cd_ul2_value2">3%</span>
+                                    <span class="cd_ul2_value3">↑</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="cd_ul2_name">响应速度：</span>
+                                <a href="#" class="cd_ul2_value" id="cd_ul2_value2">
+                                    <span class="cd_ul2_value1" id="cd_ul2_value21">高于均值</span>
+                                    <span class="cd_ul2_value2">9%</span>
+                                    <span class="cd_ul2_value3">↑</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="cd_ul2_name">发货速度：</span>
+                                <a href="#" class="cd_ul2_value" id="cd_ul2_value3">
+                                    <span class="cd_ul2_value1" id="cd_ul2_value31">低于均值</span>
+                                    <span class="cd_ul2_value2" style="color: green;">18%</span>
+                                    <span class="cd_ul2_value3" style="color: green;">↓</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="cd_ul2_name">回头率：</span>
+                                <a href="#" id="reFace">33%</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="er">
+                    <a href="#"><img src="../images/inf_er.png" alt=""></a>
+                    <img src="../images/inf_erweima.png" alt="" class="erweima">
+                </div>
+                <a href="#" class="shoucang"></a>
+                <form action="#">
+                    <input type="text" class='inf_searchInput' placeholder="输入产品关键字">
+                    <input type="submit" class="inf_this" value="搜本旺铺">
+                    <input type="submit" class="inf_all" value="搜全站">
+                </form>
+            </div>
+        </div>
+        <h2></h2>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li style="border-color: #458ad7;background: #458ad7">
+                    <a href="#" style="color: white">产品供应</a>
+                    <img src="../images/detail_nav_down.png" alt="">
+                    <div>
+                        <ul>
+                            <li><a href="#">查看所有分类 >></a></li>
+                            <li><a href="#">铝基板</a></li>
+                            <li><a href="#">六层板</a></li>
+                            <li><a href="#">四层板</a></li>
+                            <li><a href="#">双面板</a></li>
+                            <li style="border: none;"><a href="#">未分类</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">公司归档</a></li>
+                <li><a href="#">公司相册</a></li>
+                <li><a href="#">公司动态</a></li>
+                <li><a href="#">在线询价</a></li>
+                <li><a href="#">联系方式</a></li>
+                <li><a href="#">会员专区</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h3>pcb线路板厂家深圳pcb电路板加工定制单双面pcb线路板批量制作</h3>
+            <a href="#">举报</a>
+            <div class="main_left">
+                <a href="#" id="main_left_a">
+                    <img src="../images/detail_main_left.png" alt="">
+                    <span></span>
+                    <div></div>
+                </a>
+                <ul>
+                    <li style="border-color: #ff7300"><img src="../images/detail_main_left.png" alt=""></li>
+                    <li><img src="../images/detail_main_left.png" alt=""></li>
+                    <li><img src="../images/detail_main_left.png" alt=""></li>
+                    <li><img src="../images/detail_main_left.png" alt=""></li>
+                    <li style="margin-right: 0;"><img src="../images/detail_main_left.png" alt=""></li>
+                </ul>
+                <div></div>
+                <p>
+                    <a href="#" id="detail_shoucang"><img src="../images/detail_sc1.png" alt=""></a>
+                    <a href="#" id="detail_xiadan"><img src="../images/detail_xd1.png" alt=""></a>
+                </p>
+            </div>
+            <div class="main_center">
+                <div class="main_price">
+                    <h6>
+                        <span class="main_price_name">价格</span>
+                        <span class="main_price_rmb">&yen;</span>
+                        <span class="main_price_value">0.10</span>
+                    </h6>
+                    <p>
+                        <span class="main_price_name" style="line-height: 12px;">起批量</span>
+                        <span class="main_price_value2">≥1 pcs</span>
+                    </p>
+                </div>
+                <div class="main_detail">
+                    <p>
+                        <span class="main_detail_name">权益</span>
+                        <img src="../images/detail_car.png" alt="">
+                        <a href="#">登录</a>
+                        <span class="main_detail_is">查看是否享首单包邮或首单立减</span>
+                    </p>
+                    <p>
+                        <span class="main_detail_name">物流</span>
+                        <span class="main_detail_add1">广东省 广州市</span>
+                        <span class="main_detail_add2">卖家承担运费</span>
+                        <span class="main_detail_add3">近30天平均发货速度：</span>
+                        <span class="main_detail_add4">无数据</span>
+                    </p>
+                    <p>
+                        <span class="main_detail_name">产品品牌</span>
+                        <span class="main_detail_value">亚一恒</span>
+                    </p>
+                    <p>
+                        <span class="main_detail_name">产品型号</span>
+                        <span class="main_detail_value">yyh-1</span>
+                    </p>
+                    <p>
+                        <span class="main_detail_name">成交/评价</span>
+                        <span style="margin-left: 25px;">30天内</span>
+                        <span class="main_detail_zero">0</span>
+                        <span style="margin-left: 3px;">pcs成交</span>
+                        <span class="main_detail_zero" style="margin-left: 21px;">0</span>
+                        <span style="margin-left: 3px;">条评价</span>
+                    </p>
+                </div>
+                <div class="main_buy">
+                    <form action="#">
+                        <label class="main_buy_howMany" for="buyNumber">采购量</label>
+                        <p>
+                            <span class="main_buy_reduce">-</span>
+                            <input type="text" value="0" id="buyNumber" onkeyup="this.value=this.value.replace(/\D/gi,'')">
+                            <span class="main_buy_add">+</span>
+                        </p>
+                        <span>（10000000PCS可售）</span>
+                        <a class="main_submit" href="order.html">立即订购</a>
+                        <button class="main_submit">加入订购单<span></span></button>
+                    </form>
+                    <h6>
+                        <span class="main_center_payWay">支付方式</span>
+                        <a style="margin-left: 33px;" href="#">支付宝</a>
+                        <a href="#">网上银行</a>
+                        <a href="#">大额支付</a>
+                        <span class="main_center_buySupport">交易支持</span>
+                        <a href="#" style="margin-left: 33px;">担保交易</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="main_right">
+                <span></span>
+                <h6>买家还在看</h6>
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_1_1.png" alt=""></a>
+                            <span>&yen; 0.9</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_1_2.png" alt=""></a>
+                            <span>&yen; 0.9</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_1_3.png" alt=""></a>
+                            <span>&yen; 1</span>
+                        </li>
+                    </ul>
+                    <ul style="left: 112px;">
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_2_1.png" alt=""></a>
+                            <span>&yen; 0.9</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_2_2.png" alt=""></a>
+                            <span>&yen; 1</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_2_3.png" alt=""></a>
+                            <span>&yen; 0.9</span>
+                        </li>
+                    </ul>
+                    <ul style="left: -112px;">
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_3_1.png" alt=""></a>
+                            <span>&yen; 0.9</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_3_2.png" alt=""></a>
+                            <span>&yen; 1</span>
+                        </li>
+                        <li>
+                            <a href="#"><img src="../images/detail_banner_3_3.png" alt=""></a>
+                            <span>&yen; 0.9</span>
+                        </li>
+                    </ul>
+                </div>
+                <img src="../images/detail_bannerPrevious1.png" alt="" class="main_right_previous">
+                <u style="margin-left: 15px;background: #ff7300"></u>
+                <u></u>
+                <u></u>
+                <img src="../images/detail_bannerNext1.png" alt="" class="main_right_next">
+            </div>
+        </main>
+        <article>
+            <div class="art_left">
+                <div class="art_left1">
+                    <div class="art_left_header">
+                    <a href="#">宁波亚一恒电子科技有限公司</a>
+                    <p>
+                        <a href="#" class="art_left_header_cheng">
+                            <img src="../images/cheng.png" alt="">
+                            <span class="art_left_header_one">1</span>
+                            <span class="art_left_header_year">年</span>
+                            <img src="../images/companyImg.png" alt="" style="margin-left: 10px;">
+                        </a>
+                    </p>
+                </div>
+                    <div class="art_left_main">
+                        <p>
+                            <span>联系卖家：</span>
+                            <a href="#">肖练</a>
+                            <img src="../images/wangwang.gif" alt="" style="cursor: pointer">
+                        </p>
+                        <p>
+                            <span>交易勋章：</span>
+                            <a href="#"><img src="../images/cd_2.png" alt=""></a>
+                        </p>
+                        <p>
+                            <span>供应等级：</span>
+                            <a href="#"><img src="../images/cd_1.png" alt=""></a>
+                        </p>
+                        <p>
+                            <span>经营模式：</span>
+                            <span>生产厂家</span>
+                        </p>
+                        <p style="border-bottom: 1px dashed #e5e5e5;height: 41px;">
+                            <span>所在地区：</span>
+                            <span>浙江 宁波</span>
+                        </p>
+                        <a href="#">
+                            <p style="margin-left: 12px;">
+                                <span>货描</span>
+                                <span style="color: red">3% ↑</span>
+                            </p>
+                            <p>
+                                <span>响应</span>
+                                <span style="color: red">9% ↑</span>
+                            </p>
+                            <p style="border-right: 1px solid #e5e5e5;">
+                                <span>发货</span>
+                                <span style="color: red">18% ↑</span>
+                            </p>
+                            <p style="width: 47px;">
+                                <span>回头率</span>
+                                <span style="color: black">33%</span>
+                            </p>
+                        </a>
+                    </div>
+                        <div class="art_left_footer">
+                        <a href="#" style="margin-left: 17px;">进入旺铺</a>
+                        <a href="#" style="margin-left: 3px;">收藏领券</a>
+                    </div>
+                </div>
+                <div class="art_left2">
+                    <div class="art_left2_header"></div>
+                    <div class="art_left2_main">
+                        <span style="margin: 10px 0 0 10px;">产品名</span>
+                        <input type="text" class="input_cpm">
+                        <span style="margin: 6px 0 0 22px;">价格</span>
+                        <input type="text" class="input_minPrice">
+                        <span style="margin: 6px 0 0 8px;">到</span>
+                        <input type="text" class="input_maxPrice">
+                        <a href="#"><img src="../images/detail_search.png" alt=""></a>
+                    </div>
+                </div>
+                <a href="#"><img src="../images/djsc.gif" alt=""></a>
+                <div class="art_left3">
+                    <div class="art_left3_header"></div>
+                    <ul>
+                        <li style="margin-top: 0;"><a href="#">铝基板</a></li>
+                        <li><a href="#">六层板</a></li>
+                        <li><a href="#">四层板</a></li>
+                        <li><a href="#">双面板</a></li>
+                    </ul>
+                </div>
+                <div class="art_left4">
+                    <div class="art_left4_header"></div>
+                    <p style="margin-top: 7px;">
+                        <a href="#">肖练</a>
+                        <span style="margin-left: 4px;">先生（市场部 经理）</span>
+                        <a href="#"><img src="../images/wangwang.gif" alt=""></a>
+                    </p>
+                    <p>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：86 0755 82593853</p>
+                    <p>移动电话： 13823238150</p>
+                    <p>传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真：86 0755 82594121</p>
+                    <img src="../images/map.png" alt="">
+                    <span class="art_left_more"><a href="#">更多>></a></span>
+                </div>
+                <div class="art_left5">
+                    <div class="art_left5_header"></div>
+                    <ul>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                        <li>
+                            <a href="#" class="art_left5_img"></a>
+                            <a href="#" class="art_left5_name"
+                               title="智能机器人电路板机器人线路板智能机器人pcb线路板打样批量生产">
+                                智能机器人电路板<br>机器人线路板智能机器人pcb线路板打样批量生产
+                            </a>
+                            <span class="art_left5_price">&yen;1.00</span>
+                        </li>
+                    </ul>
+                    <span class="art_left_more"><a href="#">更多></a></span>
+                </div>
+            </div>
+            <div class="art_right">
+                <ul class="art_right_nav">
+                    <li style="color: #ff7300">详细信息</li>
+                    <li>成交（0）</li>
+                    <li>评价（0）</li>
+                    <li>订购说明</li>
+                </ul>
+                <div class="art_right_detail">
+                    <div class="art_right_detail1">
+                        <ul class="art_right_detail1_name1">
+                            <li>加工定制</li>
+                            <li>型号</li>
+                            <li>基材</li>
+                            <li>阻燃特性</li>
+                        </ul>
+                        <ul>
+                            <li>是</li>
+                            <li>yyh-1</li>
+                            <li>铜</li>
+                            <li>VO板</li>
+                        </ul>
+                        <ul class="art_right_detail1_name2">
+                            <li>货号</li>
+                            <li>机械刚性</li>
+                            <li>绝缘材料</li>
+                            <li>加工工艺</li>
+                        </ul>
+                        <ul>
+                            <li>00001</li>
+                            <li>刚性</li>
+                            <li>有机树脂</li>
+                            <li>电解箔</li>
+                        </ul>
+                        <ul class="art_right_detail1_name3">
+                            <li>品牌</li>
+                            <li>层数</li>
+                            <li>绝缘层厚度</li>
+                            <li>增强材料</li>
+                        </ul>
+                        <ul>
+                            <li>亚一恒</li>
+                            <li>双面</li>
+                            <li>常规班</li>
+                            <li>玻纤布基</li>
+                        </ul>
+                    </div>
+                    <div class="art_right_detail2">
+                        <h5>亚一恒电路源头工厂 接受来图来样加工定制</h5>
+                        <h6>【打样快、质量好、交期准】</h6>
+                        <p>
+                            <a href="#">关于产品</a>
+                            <span>
+                                可以根据不同规格尺寸定制,pcb打样3天左右,批量生产5-6天,应用领域广泛.适用于任何环境。
+                            </span>
+                        </p>
+                        <p>
+                            <a href="#">关于参数</a>
+                            <span>
+                                由于PCB线路板的特性,所有产品图片、价格、属性仅共参考,无现货出售,报价以PCB文件为准。
+                            </span>
+                        </p>
+                        <p>
+                            <a href="#">关于价格</a>
+                            <span>
+                                最终价格取决于线路的精密度、交货时间、数量、尺寸大小、工艺要求及原材料选择。
+                            </span>
+                        </p>
+                        <span>下单前请咨询旺旺客服或来电联系：13823238150肖先生</span>
+                    </div>
+                    <div class="art_right_detail3">
+                        <div>
+                            <h5>表 面 处 理 工 艺</h5>
+                            <h6>SURFACE FISH</h6>
+                            <p>裸铜本身的可焊性很好,但容易被氧化,为了保证良好的可焊性和电性能,我们需要做各种表面处理工艺。</p>
+                            <span>
+                                实际实用的表面处理工艺多种多样,大致可分为OSP、喷锡（有铅.无铅）、沉锡、沉金、沉银、沉镍金、
+                                镍钯金、电硬金、全板镀金、金手指等等。
+                            </span>
+                        </div>
+                        <ul>
+                            <li class="art_right_detail3_li13">
+                                <a href="#">OSP抗氧化工艺</a>
+                                <p>
+                                    主要特性：在铜表面覆盖一层有机保护膜<br>
+                                    厚度控制器：0.2—0.6μm<br>
+                                    优点：膜厚均匀，成本低<br>
+                                    缺点：难以承受多次回流焊接
+                                </p>
+                                <img src="../images/detail_art_right_detail3.png" alt="">
+                            </li>
+                            <li class="art_right_detail3_li24">
+                                <a href="#">OSP抗氧化工艺</a>
+                                <p>
+                                    主要特性：在铜表面覆盖一层有机保护膜<br>
+                                    厚度控制器：0.2—0.6μm<br>
+                                    优点：膜厚均匀，成本低<br>
+                                    缺点：难以承受多次回流焊接
+                                </p>
+                                <img src="../images/detail_art_right_detail3.png" alt="">
+                            </li>
+                            <li class="art_right_detail3_li13"><a href="#">OSP抗氧化工艺</a>
+                                <p>
+                                    主要特性：在铜表面覆盖一层有机保护膜<br>
+                                    厚度控制器：0.2—0.6μm<br>
+                                    优点：膜厚均匀，成本低<br>
+                                    缺点：难以承受多次回流焊接
+                                </p>
+                                <img src="../images/detail_art_right_detail3.png" alt="">
+                            </li>
+                            <li class="art_right_detail3_li24"><a href="#">OSP抗氧化工艺</a>
+                                <p>
+                                    主要特性：在铜表面覆盖一层有机保护膜<br>
+                                    厚度控制器：0.2—0.6μm<br>
+                                    优点：膜厚均匀，成本低<br>
+                                    缺点：难以承受多次回流焊接
+                                </p>
+                                <img src="../images/detail_art_right_detail3.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="art_right_detail4">
+                        <p>精湛工艺 无可挑剔</p>
+                        <img src="../images/detail_art_right_detail4.png" alt="">
+                    </div>
+                    <div class="art_right_detail4">
+                        <p>产品实拍</p>
+                        <img src="../images/detail_art_right_detail_44.png" alt="">
+                        <img src="../images/detail_art_right_detail_44.png" alt="">
+                        <img src="../images/detail_art_right_detail_44.png" alt="">
+                        <img src="../images/detail_art_right_detail_44.png" alt="">
+                        <img src="../images/detail_art_right_detail_44.png" alt="">
+                    </div>
+                </div>
+                <div class="art_right_sole">
+                    <p>本商品累计售出0PCS，30天内没有成交记录</p>
+                </div>
+                <div class="art_right_evaluate">
+                    <p>无记录</p>
+                </div>
+                <div class="art_right_buyWay">
+                    <img src="../images/detail_art_right_buyWay.png" alt="">
+                </div>
+            </div>
+        </article>
+        <footer>
+            <div class="footer">
+                <a href="#"><img src="../images/detail_footer.png" alt=""></a>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>新手指南</dt>
+                            <dd style="margin-top: 10px;"><a href="#">买家入门</a></dd>
+                            <dd><a href="#">开通支付宝</a></dd>
+                            <dd><a href="#">绑定支付宝</a></dd>
+                            <dd><a href="#">安装阿里旺旺</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>交易安全</dt>
+                            <dd style="margin-top: 10px;"><a href="#">买家防骗</a></dd>
+                            <dd><a href="#">交易纠纷</a></dd>
+                            <dd><a href="#">投诉举报</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>采购商服务</dt>
+                            <dd style="margin-top: 10px;"><a href="#">找公司</a></dd>
+                            <dd><a href="#">找产品</a></dd>
+                            <dd><a href="#">进货单</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>1688服务</dt>
+                            <dd style="margin-top: 10px;"><a href="#">诚e赊</a></dd>
+                            <dd><a href="#">1688商学院</a></dd>
+                            <dd><a href="#">友商圈</a></dd>
+                            <dd><a href="#">在线客服</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <aside>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../images/detail_aside1_1.png" alt="">
+                        <span>我</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="../images/detail_aside2_1.png" alt="">
+                        <span>邀约</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="../images/detail_aside3_1.png" alt="">
+                        <span>上新</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="../images/detail_aside4_1.png" alt="">
+                        <span>足迹</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="../images/detail_aside5_1.png" alt="">
+                        <span>消息</span>
+                    </a>
+                </li>
+                <li><a href="#">
+                        <img src="../images/detail_aside6_1.png" alt="">
+                        <span>阿里头条</span>
+                    </a>
+                </li>
+            </ul>
+            <img src="../images/detail_aside_up.png" alt="">
+        </aside>
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../js/detail1.js"></script>
+        <script src="../js/detail2.js"></script>
+        <script src="../js/detail3.js"></script>
+    </body>
+</html>

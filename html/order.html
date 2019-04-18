@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../css/cssReset.css">
+        <link rel="stylesheet" href="../css/order1.css">
+        <link rel="stylesheet" href="../css/order2.css">
+        <link rel="stylesheet" href="../css/order3.css">
+    </head>
+    <body>
+        <header>
+        <div>
+            <p>
+                <span class="phone"><img src="../images/phone.png" alt=""></span>
+                <a href="#" class="phone_link">手机阿里</a>
+                <span class="welcome">欢迎来到阿里巴巴</span>
+                <span class="redbage" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                            <img src="../images/redbage.png" alt="">
+                        </span>
+                <a href="login.html" class="login" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                    请登录
+                </a>
+                <a href="register.html" class="register">免费注册</a>
+            </p>
+            <div class="redbageover" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                <h3>先登录再采购，享更多权益！</h3>
+                <img src="../images/true.png">
+                <u class="u1">领取新人红包</u>
+                <img src="../images/true.png">
+                <u class="u2">享新人权益</u>
+                <img src="../images/true.png">
+                <u class="u3">更精准推荐</u>
+                <img src="../images/true.png">
+                <u class="u4">记录浏览足迹</u>
+            </div>
+            <div class="redbageover2" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()"></div>
+            <ul class="header_ul" id="header_ul">
+                <li class="li1" onmouseover="headerOver(0)" onmouseout="headerOut(0)">
+                    <a href="../index.html">1688首页</a>
+                </li>
+                <li class="li2" onmouseover="headerOver(1)" onmouseout="headerOut(1)">
+                    <a href="#">我的阿里</a>
+                    <span></span>
+                    <div class="header_div1">
+                        <ul>
+                            <li class="header_div1_li1">
+                                <dl>
+                                    <dt><a href="#">买家中心</a></dt>
+                                    <dd><a href="#">已买到货品</a></dd>
+                                    <dd><a href="#">优惠券</a></dd>
+                                    <dd><a href="#">发布询价单</a></dd>
+                                    <dd><a href="#">店铺动态</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div1_li2">
+                                <dl>
+                                    <dt><a href="#">卖家中心</a></dt>
+                                    <dd><a href="#">已卖出货品</a></dd>
+                                    <dd><a href="#">发布供应产品</a></dd>
+                                    <dd><a href="#">管理供应产品</a></dd>
+                                    <dd><a href="#">管理旺铺</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div1_li3">
+                                <dl>
+                                    <dt><a href="#">服务</a></dt>
+                                    <dd><a href="#">开店装修</a></dd>
+                                    <dd><a href="#">应用工具</a></dd>
+                                    <dd><a href="#">运营服务</a></dd>
+                                    <dd><a href="#">综合服务</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li3" onmouseover="headerOver(2)" onmouseout="headerOut(2)">
+                    <a href="#">进货单</a>
+                    <span class="number"></span>
+                    <span></span>
+                    <div class="header_div2">
+                        <div class="header_div2_top"><h6>进货单中暂未添加任何货品</h6></div>
+                        <div class="header_div2_bottom"><button>查看进货单</button></div>
+                    </div>
+                </li>
+                <li class="li4" onmouseover="headerOver(3)" onmouseout="headerOut(3)">
+                    <span class="star"></span>
+                    <a href="#">我的收藏</a>
+                    <span></span>
+                    <div class="header_div3">
+                        <ul>
+                            <li class="header_div3_li1">
+                                <dl>
+                                    <dt><a href="#">货源</a></dt>
+                                    <dd><a href="#">收藏的货品</a></dd>
+                                    <dd><a href="#">铺货入淘的货品</a></dd>
+                                    <dd><a href="#">铺货入淘ERP的货品</a></dd>
+                                    <dd><a href="#">转发过的货品</a></dd>
+                                    <dd><a href="#">浏览足迹</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div3_li2">
+                                <dl>
+                                    <dt><a href="#">供应商</a></dt>
+                                    <dd><a href="#">收藏的供应商</a></dd>
+                                    <dd><a href="#">收藏的服务</a></dd>
+                                    <dd><a href="#">交易过的供应商</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li5" onmouseover="headerOver(4)" onmouseout="headerOut(4)">
+                    <a href="#">诚信通官网</a>
+                    <span></span>
+                    <div class="header_div4">
+                        <ul class="header_div4_ul">
+                            <li onmouseover="headerDiv4Over(0)" onmouseout="headerDiv4Out(0)">
+                                <div class="header_div4_div1"></div><a href="#">免费联系我们</a>
+                            </li>
+                            <li onmouseover="headerDiv4Over(1)" onmouseout="headerDiv4Out(1)">
+                                <div class="header_div4_div2"></div><a href="#">功能体验馆</a>
+                            </li>
+                            <li onmouseover="headerDiv4Over(2)" onmouseout="headerDiv4Out(2)">
+                                <div class="header_div4_div3"></div><a href="#">新会员申请</a>
+                            </li>
+                            <li onmouseover="headerDiv4Over(3)" onmouseout="headerDiv4Out(3)">
+                                <div class="header_div4_div4"></div><a href="#">老会员续费</a>
+                            </li>
+                            <li onmouseover="headerDiv4Over(4)" onmouseout="headerDiv4Out(4)">
+                                <div class="header_div4_div5"></div><a href="#">会员活动</a>
+                            </li>
+                            <li onmouseover="headerDiv4Over(5)" onmouseout="headerDiv4Out(5)">
+                                <div class="header_div4_div6"></div><a href="#">我的诚信通</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li6" onmouseover="headerOver(5)" onmouseout="headerOut(5)">
+                    <a href="#">实力商家</a>
+                    <span></span>
+                    <div class="header_div5">
+                        <ul>
+                            <li><a href="#">实力品牌</a></li>
+                            <li><a href="#">实力工厂</a></li>
+                            <li><a href="#">商家入驻</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li7" onmouseover="headerOver(6)" onmouseout="headerOut(6)">
+                    <a href="#">我是供应商</a>
+                    <span></span>
+                    <div class="header_div6">
+                        <ul>
+                            <li><a href="#">成长中心</a></li>
+                            <li><a href="#">成功经验</a></li>
+                            <li><a href="#">热门活动</a></li>
+                            <li><a href="#">营销推广</a></li>
+                            <li><a href="#">本地服务</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li8" onmouseover="headerOver(7)" onmouseout="headerOut(7)">
+                    <a href="#">客服中心</a>
+                    <span></span>
+                    <div class="header_div7">
+                        <ul>
+                            <li><a href="#">买家客服</a></li>
+                            <li><a href="#">卖家客服</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="li9" onmouseover="headerOver(8)" onmouseout="headerOut(8)">
+                    <a href="#">网站导航</a>
+                    <span></span>
+                    <div class="header_div8">
+                        <ul>
+                            <li class="header_div8_li1">
+                                <dl>
+                                    <dt>行内市场</dt>
+                                    <dd><a href="#">女装</a></dd>
+                                    <dd><a href="#">男装</a></dd>
+                                    <dd><a href="#">内衣</a></dd>
+                                    <dd><a href="#">鞋靴</a></dd>
+                                    <dd><a href="#">箱包</a></dd>
+                                    <dd><a href="#">配饰</a></dd>
+                                    <dd><a href="#">运动户外</a></dd>
+                                    <dd><a href="#">母婴用品</a></dd>
+                                    <dd><a href="#">通知</a></dd>
+                                    <dd><a href="#">玩具</a></dd>
+                                    <dd><a href="#">工艺品</a></dd>
+                                    <dd><a href="#">宠物</a></dd>
+                                    <dd><a href="#">园艺</a></dd>
+                                    <dd><a href="#">日用百货</a></dd>
+                                    <dd><a href="#">办公文教</a></dd>
+                                    <dd><a href="#">汽车用品</a></dd>
+                                    <dd><a href="#">食品饮料</a></dd>
+                                    <dd><a href="#">餐饮生鲜</a></dd>
+                                    <dd><a href="#">家纺家饰</a></dd>
+                                    <dd><a href="#">家装建材</a></dd>
+                                    <dd><a href="#">美容化妆</a></dd>
+                                    <dd><a href="#">个护家清</a></dd>
+                                    <dd><a href="#">3C</a></dd>
+                                    <dd><a href="#">手机</a></dd>
+                                    <dd><a href="#">家电</a></dd>
+                                    <dd><a href="#">电工电气</a></dd>
+                                    <dd><a href="#">照片</a></dd>
+                                    <dd><a href="#">仪表</a></dd>
+                                    <dd><a href="#">包装</a></dd>
+                                    <dd><a href="#">印刷纸业</a></dd>
+                                    <dd><a href="#">电子元器件</a></dd>
+                                    <dd><a href="#">安防</a></dd>
+                                    <dd><a href="#">机械设备</a></dd>
+                                    <dd><a href="#">五金工具</a></dd>
+                                    <dd><a href="#">劳保</a></dd>
+                                    <dd><a href="#">橡胶原料</a></dd>
+                                    <dd><a href="#">化工原料</a></dd>
+                                    <dd><a href="#">精细化工</a></dd>
+                                    <dd><a href="#">钢材</a></dd>
+                                    <dd><a href="#">纺织皮革</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div8_li2">
+                                <dl>
+                                    <dt><a href="#">特色市场</a></dt>
+                                    <dd><a href="#">淘货源</a></dd>
+                                    <dd><a href="#">伙拼</a></dd>
+                                    <dd><a href="#">微商进货</a></dd>
+                                    <dd><a href="#">跨境专供</a></dd>
+                                    <dd><a href="#">进口货源</a></dd>
+                                    <dd><a href="#">工业品品牌站</a></dd>
+                                    <dd><a href="#">淘工厂</a></dd>
+                                    <dd><a href="#">源头好货</a></dd>
+                                    <dd><a href="#">实力优品</a></dd>
+                                    <dd><a href="#">产业带</a></dd>
+                                    <dd><a href="#">企业汇采</a></dd>
+                                    <dd class="lastdd"><a href="#">超级店</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div8_li3">
+                                <dl>
+                                    <dt>采购平台</dt>
+                                    <dd><a href="#">大企业采购</a></dd>
+                                    <dd class="lastdd"><a href="#">采购对接</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div8_li4">
+                                <dl>
+                                    <dt>以商会友</dt>
+                                    <dd><a href="#">行业资讯</a></dd>
+                                    <dd><a href="#">商友圈</a></dd>
+                                    <dd><a href="#">生意经</a></dd>
+                                    <dd><a href="#">阿里智库</a></dd>
+                                    <dd class="lastdd"><a href="#">1688商学院</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div8_li5">
+                                <dl>
+                                    <dt>常用工具</dt>
+                                    <dd><a href="#">商家工作台</a></dd>
+                                    <dd><a href="#">手机阿里买家版</a></dd>
+                                    <dd><a href="#">手机阿里卖家版</a></dd>
+                                    <dd><a href="#">阿里贷款</a></dd>
+                                    <dd><a href="#">阿里物流</a></dd>
+                                    <dd><a href="#">商机助理</a></dd>
+                                    <dd><a href="#">找货神器</a></dd>
+                                    <dd><a href="#">数字营销平台</a></dd>
+                                    <dd><a href="#">开放平台</a></dd>
+                                    <dd><a href="#">八载</a></dd>
+                                    <dd><a href="#">1688分销客</a></dd>
+                                    <dd><a href="#">1688创易秀</a></dd>
+                                    <dd class="lastdd"><a href="#">店小密</a></dd>
+                                </dl>
+                            </li>
+                            <li class="header_div8_li6">
+                                <dl>
+                                    <dt>安全交易</dt>
+                                    <dd><a href="#">买家保障</a></dd>
+                                    <dd><a href="#">商家认证</a></dd>
+                                    <dd><a href="#">支付宝</a></dd>
+                                    <dd><a href="#">阿里网规</a></dd>
+                                    <dd class="lastdd"><a href="#">投诉举报</a></dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <div class="header_div8_div">
+                            <h4><a href="#">更多内容 ></a></h4>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+        <h1><a href="../index.html"><img src="../images/order_logo.png" alt=""></a></h1>
+        <article>
+            <p>收货地址：</p>
+            <form action="#">
+                <img src="../images/order_add.png" alt="">
+                <span class="art_newAddress">使用新地址</span>
+                <span class="art_importAddress">可导入您在淘宝、支付宝已设置的收、发货地址，点此</span>
+                <a href="#">导入地址</a>
+                <ul>
+                    <li style="margin-top: 0;">
+                        <span style="letter-spacing: 6px;">收货人</span>
+                        <span style="margin-left: -6px;">：</span>
+                        <input type="text" id="user" class="art_input">
+                        <span class="art_blur" style="width: 110px;">
+                            <img src="../images/order_blur.png" alt="">
+                            请填写收货人姓名
+                        </span>
+                    </li>
+                    <li>
+                        <span>所在地区</span>
+                        <span>：</span>
+                        <input type="text" id="location" class="art_input">
+                        <span class="art_blur" style="width: 98px;">
+                            <img src="../images/order_blur.png" alt="">
+                            请选择所在地区
+                        </span>
+                    </li>
+                    <li style="height: 50px;">
+                        <span>详细地址</span>
+                        <span>：</span>
+                        <textarea name="" id="detailAddress" class="art_input"></textarea>
+                        <span id="detailAddressBlur">
+                            <img src="../images/order_blur.png" alt="">
+                            请填写详情地址
+                        </span>
+                    </li>
+                    <li>
+                        <span style="letter-spacing: 24px;">邮编</span>
+                        <span style="margin-left: -24px;">：</span>
+                        <input type="text" id="zidCode" class="art_input">
+                        <span class="art_blur" style="width: 120px;"><img src="../images/order_blur2.png" alt=""></span>
+                    </li>
+                    <li>
+                        <span style="letter-spacing: 24px;">手机</span>
+                        <span style="margin-left: -24px;">：</span>
+                        <input type="text" id="mobilePhone" class="art_input">
+                        <span class="art_blur" style="width: 146px;">
+                            <img src="../images/order_blur.png" alt="">
+                            电话和手机至少填写一项
+                        </span>
+                    </li>
+                    <li>
+                        <span>固定电话</span>
+                        <span>：</span>
+                        <input type="text" id="fixPhone1" class="art_input" placeholder="区号">
+                        <span class="art_r">-</span>
+                        <input type="text" id="fixPhone2" class="art_input" placeholder="电话号">
+                        <span class="art_r">-</span>
+                        <input type="text" id="fixPhone3" class="art_input" placeholder="分机号">
+                        <span class="art_blur" style="width: 238px;">
+                            <img src="../images/order_blur.png" alt="">
+                            请填写正确的国内电话号码，如87582688
+                        </span>
+                    </li>
+                </ul>
+                <b></b>
+                <u>至少填写一个</u>
+                <input type="checkbox" id="defaultAddress">
+                <span id="setDefaultAddress">设置为默认收货地址</span>
+                <span id="theResultOfSetDefaultAddress">设置后系统在下单时自动选中该收货地址</span>
+                <a href="#" id="submit">确认收货信息</a>
+            </form>
+            <div class="pasteAddress">
+                <p>粘贴地址：</p>
+                <textarea id="pasteAddress"></textarea>
+                <button>自动匹配地址</button>
+            </div>
+        </article>
+        <main>
+            <h2>
+                <span>卖家：</span>
+                <a href="#" title="宁波亚一恒电子科技有限公司" class="main_companyName">宁波亚一恒电子科技有限公司</a>
+                <a href="#" style="margin-left: 3px;" title="我正在上网，马上和我洽谈">
+                    <img src="../images/order_wangwang.png" alt="">
+                </a>
+            </h2>
+            <p>订单1</p>
+            <div class="order">
+                <p class="order_title">
+                    <span style="margin-left: 12px;">货品信息</span>
+                    <span style="margin-left: 291px;">单价（元）</span>
+                    <span style="margin-left: 98px;">数量</span>
+                    <span style="margin-left: 94px;">优惠（元）</span>
+                    <span style="margin-left: 107px;">金额（元）</span>
+                    <span style="margin-left: 84px;">运费（元）</span>
+                </p>
+                <p class="order_content">
+                    <a href="#" class="order_img" title="pcb线路板厂家深圳pcb电路板加工定制单双面pcb线路板批量制作">
+                        <img src="../images/orderImg.png" alt="">
+                    </a>
+                    <a href="#" class="order_name" title="pcb线路板厂家深圳pcb电路板加工定制单双面pcb线路板批量制作">
+                        pcb线路板厂家深圳pcb电路板加工定制单双面pcb线路板批量制作
+                    </a>
+                    <span class="order_price">0.10</span>
+                    <button style="margin-left: 80px;">-</button>
+                    <input type="text" id="order_number" value="1">
+                    <button>+</button>
+                    <span class="order_littlePrice">--</span>
+                    <span class="order_allPrice">0.10</span>
+                    <span class="order_runPrice">0.00<br>卖家承担运费</span>
+                </p>
+                <p class="order_footer">
+                    <span class="order_massage">给卖家留言：</span>
+                    <input type="text" id="order_massage" placeholder="可以告诉卖家您的特殊要求">
+                </p>
+            </div>
+            <div class="payWay">
+                <p>交易方式：</p>
+                <img src="../images/jydb.png" alt="">
+                <span>支付宝担保交易已移至担保交易中</span>
+            </div>
+        </main>
+        <div class="summary">
+            <p class="summary_left">
+                <span class="summary_all">总计：</span>
+                <span class="summary_all1">货品种类：1种</span>
+                <span class="summary_all2">数量总计：1件</span>
+            </p>
+            <p class="summary_right">
+                <span class="summary_allPrice">货品总金额：0.10元</span>
+                <span class="summary_allRunPrice">运费总计：0.00元</span>
+                <span class="summary_shouldPay">应付金额（不含运费）：</span>
+                <span class="summary_shouldPayPrice">0.10</span>
+                <span class="summary_yuan">元</span>
+                <span class="summary_hideName">匿名购买</span>
+                <input type="checkbox" id="hideName">
+            </p>
+        </div>
+        <div class="submitOrder">
+            <a href="#">提交订单</a>
+        </div>
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../js/order1.js"></script>
+        <script src="../js/order2.js"></script>
+        <script src="../js/order3.js"></script>
+    </body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/cssReset.css">
+    <link rel="stylesheet" href="../css/register1.css">
+    <link rel="stylesheet" href="../css/register2.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<header>
+    <div>
+        <p>
+            <span class="phone"><img src="../images/phone.png" alt=""></span>
+            <a href="#" class="phone_link">手机阿里</a>
+            <span class="welcome">欢迎来到阿里巴巴</span>
+            <span class="redbage" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                    <img src="../images/redbage.png" alt="">
+                </span>
+            <a href="login.html" class="login" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                请登录
+            </a>
+            <a href="register.html" class="register">免费注册</a>
+        </p>
+        <div class="redbageover" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+            <h3>先登录再采购，享更多权益！</h3>
+            <img src="../images/true.png">
+            <u class="u1">领取新人红包</u>
+            <img src="../images/true.png">
+            <u class="u2">享新人权益</u>
+            <img src="../images/true.png">
+            <u class="u3">更精准推荐</u>
+            <img src="../images/true.png">
+            <u class="u4">记录浏览足迹</u>
+        </div>
+        <div class="redbageover2" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()"></div>
+        <ul class="header_ul" id="header_ul">
+            <li class="li1" onmouseover="headerOver(0)" onmouseout="headerOut(0)">
+                <a href="../index.html">1688首页</a>
+            </li>
+            <li class="li2" onmouseover="headerOver(1)" onmouseout="headerOut(1)">
+                <a href="#">我的阿里</a>
+                <span></span>
+                <div class="header_div1">
+                    <ul>
+                        <li class="header_div1_li1">
+                            <dl>
+                                <dt><a href="#">买家中心</a></dt>
+                                <dd><a href="#">已买到货品</a></dd>
+                                <dd><a href="#">优惠券</a></dd>
+                                <dd><a href="#">发布询价单</a></dd>
+                                <dd><a href="#">店铺动态</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div1_li2">
+                            <dl>
+                                <dt><a href="#">卖家中心</a></dt>
+                                <dd><a href="#">已卖出货品</a></dd>
+                                <dd><a href="#">发布供应产品</a></dd>
+                                <dd><a href="#">管理供应产品</a></dd>
+                                <dd><a href="#">管理旺铺</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div1_li3">
+                            <dl>
+                                <dt><a href="#">服务</a></dt>
+                                <dd><a href="#">开店装修</a></dd>
+                                <dd><a href="#">应用工具</a></dd>
+                                <dd><a href="#">运营服务</a></dd>
+                                <dd><a href="#">综合服务</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li3" onmouseover="headerOver(2)" onmouseout="headerOut(2)">
+                <a href="#">进货单</a>
+                <span class="number"></span>
+                <span></span>
+                <div class="header_div2">
+                    <div class="header_div2_top"><h6>进货单中暂未添加任何货品</h6></div>
+                    <div class="header_div2_bottom"><button>查看进货单</button></div>
+                </div>
+            </li>
+            <li class="li4" onmouseover="headerOver(3)" onmouseout="headerOut(3)">
+                <span class="star"></span>
+                <a href="#">我的收藏</a>
+                <span></span>
+                <div class="header_div3">
+                    <ul>
+                        <li class="header_div3_li1">
+                            <dl>
+                                <dt><a href="#">货源</a></dt>
+                                <dd><a href="#">收藏的货品</a></dd>
+                                <dd><a href="#">铺货入淘的货品</a></dd>
+                                <dd><a href="#">铺货入淘ERP的货品</a></dd>
+                                <dd><a href="#">转发过的货品</a></dd>
+                                <dd><a href="#">浏览足迹</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div3_li2">
+                            <dl>
+                                <dt><a href="#">供应商</a></dt>
+                                <dd><a href="#">收藏的供应商</a></dd>
+                                <dd><a href="#">收藏的服务</a></dd>
+                                <dd><a href="#">交易过的供应商</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li5" onmouseover="headerOver(4)" onmouseout="headerOut(4)">
+                <a href="#">诚信通官网</a>
+                <span></span>
+                <div class="header_div4">
+                    <ul class="header_div4_ul">
+                        <li onmouseover="headerDiv4Over(0)" onmouseout="headerDiv4Out(0)">
+                            <div class="header_div4_div1"></div><a href="#">免费联系我们</a>
+                        </li>
+                        <li onmouseover="headerDiv4Over(1)" onmouseout="headerDiv4Out(1)">
+                            <div class="header_div4_div2"></div><a href="#">功能体验馆</a>
+                        </li>
+                        <li onmouseover="headerDiv4Over(2)" onmouseout="headerDiv4Out(2)">
+                            <div class="header_div4_div3"></div><a href="#">新会员申请</a>
+                        </li>
+                        <li onmouseover="headerDiv4Over(3)" onmouseout="headerDiv4Out(3)">
+                            <div class="header_div4_div4"></div><a href="#">老会员续费</a>
+                        </li>
+                        <li onmouseover="headerDiv4Over(4)" onmouseout="headerDiv4Out(4)">
+                            <div class="header_div4_div5"></div><a href="#">会员活动</a>
+                        </li>
+                        <li onmouseover="headerDiv4Over(5)" onmouseout="headerDiv4Out(5)">
+                            <div class="header_div4_div6"></div><a href="#">我的诚信通</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li6" onmouseover="headerOver(5)" onmouseout="headerOut(5)">
+                <a href="#">实力商家</a>
+                <span></span>
+                <div class="header_div5">
+                    <ul>
+                        <li><a href="#">实力品牌</a></li>
+                        <li><a href="#">实力工厂</a></li>
+                        <li><a href="#">商家入驻</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li7" onmouseover="headerOver(6)" onmouseout="headerOut(6)">
+                <a href="#">我是供应商</a>
+                <span></span>
+                <div class="header_div6">
+                    <ul>
+                        <li><a href="#">成长中心</a></li>
+                        <li><a href="#">成功经验</a></li>
+                        <li><a href="#">热门活动</a></li>
+                        <li><a href="#">营销推广</a></li>
+                        <li><a href="#">本地服务</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li8" onmouseover="headerOver(7)" onmouseout="headerOut(7)">
+                <a href="#">客服中心</a>
+                <span></span>
+                <div class="header_div7">
+                    <ul>
+                        <li><a href="#">买家客服</a></li>
+                        <li><a href="#">卖家客服</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="li9" onmouseover="headerOver(8)" onmouseout="headerOut(8)">
+                <a href="#">网站导航</a>
+                <span></span>
+                <div class="header_div8">
+                    <ul>
+                        <li class="header_div8_li1">
+                            <dl>
+                                <dt>行内市场</dt>
+                                <dd><a href="#">女装</a></dd>
+                                <dd><a href="#">男装</a></dd>
+                                <dd><a href="#">内衣</a></dd>
+                                <dd><a href="#">鞋靴</a></dd>
+                                <dd><a href="#">箱包</a></dd>
+                                <dd><a href="#">配饰</a></dd>
+                                <dd><a href="#">运动户外</a></dd>
+                                <dd><a href="#">母婴用品</a></dd>
+                                <dd><a href="#">通知</a></dd>
+                                <dd><a href="#">玩具</a></dd>
+                                <dd><a href="#">工艺品</a></dd>
+                                <dd><a href="#">宠物</a></dd>
+                                <dd><a href="#">园艺</a></dd>
+                                <dd><a href="#">日用百货</a></dd>
+                                <dd><a href="#">办公文教</a></dd>
+                                <dd><a href="#">汽车用品</a></dd>
+                                <dd><a href="#">食品饮料</a></dd>
+                                <dd><a href="#">餐饮生鲜</a></dd>
+                                <dd><a href="#">家纺家饰</a></dd>
+                                <dd><a href="#">家装建材</a></dd>
+                                <dd><a href="#">美容化妆</a></dd>
+                                <dd><a href="#">个护家清</a></dd>
+                                <dd><a href="#">3C</a></dd>
+                                <dd><a href="#">手机</a></dd>
+                                <dd><a href="#">家电</a></dd>
+                                <dd><a href="#">电工电气</a></dd>
+                                <dd><a href="#">照片</a></dd>
+                                <dd><a href="#">仪表</a></dd>
+                                <dd><a href="#">包装</a></dd>
+                                <dd><a href="#">印刷纸业</a></dd>
+                                <dd><a href="#">电子元器件</a></dd>
+                                <dd><a href="#">安防</a></dd>
+                                <dd><a href="#">机械设备</a></dd>
+                                <dd><a href="#">五金工具</a></dd>
+                                <dd><a href="#">劳保</a></dd>
+                                <dd><a href="#">橡胶原料</a></dd>
+                                <dd><a href="#">化工原料</a></dd>
+                                <dd><a href="#">精细化工</a></dd>
+                                <dd><a href="#">钢材</a></dd>
+                                <dd><a href="#">纺织皮革</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div8_li2">
+                            <dl>
+                                <dt><a href="#">特色市场</a></dt>
+                                <dd><a href="#">淘货源</a></dd>
+                                <dd><a href="#">伙拼</a></dd>
+                                <dd><a href="#">微商进货</a></dd>
+                                <dd><a href="#">跨境专供</a></dd>
+                                <dd><a href="#">进口货源</a></dd>
+                                <dd><a href="#">工业品品牌站</a></dd>
+                                <dd><a href="#">淘工厂</a></dd>
+                                <dd><a href="#">源头好货</a></dd>
+                                <dd><a href="#">实力优品</a></dd>
+                                <dd><a href="#">产业带</a></dd>
+                                <dd><a href="#">企业汇采</a></dd>
+                                <dd class="lastdd"><a href="#">超级店</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div8_li3">
+                            <dl>
+                                <dt>采购平台</dt>
+                                <dd><a href="#">大企业采购</a></dd>
+                                <dd class="lastdd"><a href="#">采购对接</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div8_li4">
+                            <dl>
+                                <dt>以商会友</dt>
+                                <dd><a href="#">行业资讯</a></dd>
+                                <dd><a href="#">商友圈</a></dd>
+                                <dd><a href="#">生意经</a></dd>
+                                <dd><a href="#">阿里智库</a></dd>
+                                <dd class="lastdd"><a href="#">1688商学院</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div8_li5">
+                            <dl>
+                                <dt>常用工具</dt>
+                                <dd><a href="#">商家工作台</a></dd>
+                                <dd><a href="#">手机阿里买家版</a></dd>
+                                <dd><a href="#">手机阿里卖家版</a></dd>
+                                <dd><a href="#">阿里贷款</a></dd>
+                                <dd><a href="#">阿里物流</a></dd>
+                                <dd><a href="#">商机助理</a></dd>
+                                <dd><a href="#">找货神器</a></dd>
+                                <dd><a href="#">数字营销平台</a></dd>
+                                <dd><a href="#">开放平台</a></dd>
+                                <dd><a href="#">八载</a></dd>
+                                <dd><a href="#">1688分销客</a></dd>
+                                <dd><a href="#">1688创易秀</a></dd>
+                                <dd class="lastdd"><a href="#">店小密</a></dd>
+                            </dl>
+                        </li>
+                        <li class="header_div8_li6">
+                            <dl>
+                                <dt>安全交易</dt>
+                                <dd><a href="#">买家保障</a></dd>
+                                <dd><a href="#">商家认证</a></dd>
+                                <dd><a href="#">支付宝</a></dd>
+                                <dd><a href="#">阿里网规</a></dd>
+                                <dd class="lastdd"><a href="#">投诉举报</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <div class="header_div8_div">
+                        <h4><a href="#">更多内容 ></a></h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<h1>
+    <a href="../index.html"><img src="../images/register_logo.png" alt=""></a>
+    <span>账户注册</span>
+</h1>
+<main>
+    <div class="main">
+        <a href="#" style="margin-right: 80px;"><img src="../images/register_img1.png" alt=""></a>
+        <a href="#"><img src="../images/register_img2.png" alt=""></a>
+    </div>
+</main>
+<footer>
+    <p>
+        <img src="../images/login_footer1.png" alt="">
+        <a href="#">实力优品—热卖榜单，服务保障，放心采购！</a>
+    </p>
+    <br>
+    <p>
+        <img src="../images/login_footer2.png" alt="">
+        <a href="#">随时随地上网做生意，一切尽在手机阿里！</a>
+    </p>
+    <span>
+            <img src="../images/login_footer3.png" alt="">
+            <a href="#">“阿里巴巴中国站登录”改进建议</a>
+        </span>
+    <div class="footer">
+        <p>
+            <span>&copy;2010-2018 1688.com 版权所有</span>
+            <a href="#">著作权与商标声明</a>
+            <span>|</span>
+            <a href="#">法律声明</a>
+            <span>|</span>
+            <a href="#">服务条款</a>
+            <span>|</span>
+            <a href="#">隐私政策</a>
+            <span>|</span>
+            <a href="#">关于阿里巴巴</a>
+            <span>|</span>
+            <a href="#">联系我们</a>
+            <span>|</span>
+            <a href="#">网站导航</a>
+        </p>
+        <p>
+            <a href="#">阿里巴巴集团</a>
+            <span>|</span>
+            <a href="#">阿里巴巴国际站</a>
+            <span>|</span>
+            <a href="">阿里巴巴中国站</a>
+            <span>|</span>
+            <a href="#">全球速卖通</a>
+            <span>|</span>
+            <a href="#">淘宝网</a>
+            <span>|</span>
+            <a href="#">天猫</a>
+            <span>|</span>
+            <a href="#">聚划算</a>
+            <span>|</span>
+            <a href="#">一淘</a>
+            <span>|</span>
+            <a href="#">阿里旅行·去啊</a>
+            <span>|</span>
+            <a href="#">阿里妈妈</a>
+            <span>|</span>
+            <a href="#">虾米</a>
+            <span>|</span>
+            <a href="#">阿里云计算</a>
+            <span>|</span>
+            <a href="#">YunOS</a>
+            <span>|</span>
+            <a href="#">阿里通信</a>
+            <span>|</span>
+            <a href="#">万网</a>
+            <span>|</span>
+            <a href="#">UC</a>
+            <span>|</span>
+            <a href="#">支付宝</a>
+            <br>
+            <span>|</span>
+            <a href="#">来往</a>
+            <span>|</span>
+            <a href="#">钉钉</a>
+            <span>|</span>
+            <a href="#">阿里健康</a>
+            <span>|</span>
+            <a href="#">一达通</a>
+            <span>|</span>
+            <a href="#">Lazada</a>
+        </p>
+    </div>
+</footer>
+<script src="../js/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="../css/cssReset.css">
+        <link rel="stylesheet" href="../css/board1.css">
+        <link rel="stylesheet" href="../css/board2.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <p>
+                    <span class="phone"><img src="../images/phone.png" alt=""></span>
+                    <a href="#" class="phone_link">手机阿里</a>
+                    <span class="welcome">欢迎来到阿里巴巴</span>
+                    <span class="redbage" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                        <img src="../images/redbage.png" alt="">
+                    </span>
+                    <a href="login.html" class="login" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                        请登录
+                    </a>
+                    <a href="register.html" class="register">免费注册</a>
+                </p>
+                <div class="redbageover" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()">
+                    <h3>先登录再采购，享更多权益！</h3>
+                    <img src="../images/true.png">
+                    <u class="u1">领取新人红包</u>
+                    <img src="../images/true.png">
+                    <u class="u2">享新人权益</u>
+                    <img src="../images/true.png">
+                    <u class="u3">更精准推荐</u>
+                    <img src="../images/true.png">
+                    <u class="u4">记录浏览足迹</u>
+                </div>
+                <div class="redbageover2" onmouseover="rbLoginOver()" onmouseout="rbLoginOut()"></div>
+                <ul class="header_ul" id="header_ul">
+                    <li class="li1" onmouseover="headerOver(0)" onmouseout="headerOut(0)">
+                        <a href="../index.html">1688首页</a>
+                    </li>
+                    <li class="li2" onmouseover="headerOver(1)" onmouseout="headerOut(1)">
+                        <a href="#">我的阿里</a>
+                        <span></span>
+                        <div class="header_div1">
+                            <ul>
+                                <li class="header_div1_li1">
+                                    <dl>
+                                        <dt><a href="#">买家中心</a></dt>
+                                        <dd><a href="#">已买到货品</a></dd>
+                                        <dd><a href="#">优惠券</a></dd>
+                                        <dd><a href="#">发布询价单</a></dd>
+                                        <dd><a href="#">店铺动态</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div1_li2">
+                                    <dl>
+                                        <dt><a href="#">卖家中心</a></dt>
+                                        <dd><a href="#">已卖出货品</a></dd>
+                                        <dd><a href="#">发布供应产品</a></dd>
+                                        <dd><a href="#">管理供应产品</a></dd>
+                                        <dd><a href="#">管理旺铺</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div1_li3">
+                                    <dl>
+                                        <dt><a href="#">服务</a></dt>
+                                        <dd><a href="#">开店装修</a></dd>
+                                        <dd><a href="#">应用工具</a></dd>
+                                        <dd><a href="#">运营服务</a></dd>
+                                        <dd><a href="#">综合服务</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li3" onmouseover="headerOver(2)" onmouseout="headerOut(2)">
+                        <a href="#">进货单</a>
+                        <span class="number"></span>
+                        <span></span>
+                        <div class="header_div2">
+                            <div class="header_div2_top"><h6>进货单中暂未添加任何货品</h6></div>
+                            <div class="header_div2_bottom"><button>查看进货单</button></div>
+                        </div>
+                    </li>
+                    <li class="li4" onmouseover="headerOver(3)" onmouseout="headerOut(3)">
+                        <span class="star"></span>
+                        <a href="#">我的收藏</a>
+                        <span></span>
+                        <div class="header_div3">
+                            <ul>
+                                <li class="header_div3_li1">
+                                    <dl>
+                                        <dt><a href="#">货源</a></dt>
+                                        <dd><a href="#">收藏的货品</a></dd>
+                                        <dd><a href="#">铺货入淘的货品</a></dd>
+                                        <dd><a href="#">铺货入淘ERP的货品</a></dd>
+                                        <dd><a href="#">转发过的货品</a></dd>
+                                        <dd><a href="#">浏览足迹</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div3_li2">
+                                    <dl>
+                                        <dt><a href="#">供应商</a></dt>
+                                        <dd><a href="#">收藏的供应商</a></dd>
+                                        <dd><a href="#">收藏的服务</a></dd>
+                                        <dd><a href="#">交易过的供应商</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li5" onmouseover="headerOver(4)" onmouseout="headerOut(4)">
+                        <a href="#">诚信通官网</a>
+                        <span></span>
+                        <div class="header_div4">
+                            <ul class="header_div4_ul">
+                                <li onmouseover="headerDiv4Over(0)" onmouseout="headerDiv4Out(0)">
+                                    <div class="header_div4_div1"></div><a href="#">免费联系我们</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(1)" onmouseout="headerDiv4Out(1)">
+                                    <div class="header_div4_div2"></div><a href="#">功能体验馆</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(2)" onmouseout="headerDiv4Out(2)">
+                                    <div class="header_div4_div3"></div><a href="#">新会员申请</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(3)" onmouseout="headerDiv4Out(3)">
+                                    <div class="header_div4_div4"></div><a href="#">老会员续费</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(4)" onmouseout="headerDiv4Out(4)">
+                                    <div class="header_div4_div5"></div><a href="#">会员活动</a>
+                                </li>
+                                <li onmouseover="headerDiv4Over(5)" onmouseout="headerDiv4Out(5)">
+                                    <div class="header_div4_div6"></div><a href="#">我的诚信通</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li6" onmouseover="headerOver(5)" onmouseout="headerOut(5)">
+                        <a href="#">实力商家</a>
+                        <span></span>
+                        <div class="header_div5">
+                            <ul>
+                                <li><a href="#">实力品牌</a></li>
+                                <li><a href="#">实力工厂</a></li>
+                                <li><a href="#">商家入驻</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li7" onmouseover="headerOver(6)" onmouseout="headerOut(6)">
+                        <a href="#">我是供应商</a>
+                        <span></span>
+                        <div class="header_div6">
+                            <ul>
+                                <li><a href="#">成长中心</a></li>
+                                <li><a href="#">成功经验</a></li>
+                                <li><a href="#">热门活动</a></li>
+                                <li><a href="#">营销推广</a></li>
+                                <li><a href="#">本地服务</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li8" onmouseover="headerOver(7)" onmouseout="headerOut(7)">
+                        <a href="#">客服中心</a>
+                        <span></span>
+                        <div class="header_div7">
+                            <ul>
+                                <li><a href="#">买家客服</a></li>
+                                <li><a href="#">卖家客服</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="li9" onmouseover="headerOver(8)" onmouseout="headerOut(8)">
+                        <a href="#">网站导航</a>
+                        <span></span>
+                        <div class="header_div8">
+                            <ul>
+                                <li class="header_div8_li1">
+                                    <dl>
+                                        <dt>行内市场</dt>
+                                        <dd><a href="#">女装</a></dd>
+                                        <dd><a href="#">男装</a></dd>
+                                        <dd><a href="#">内衣</a></dd>
+                                        <dd><a href="#">鞋靴</a></dd>
+                                        <dd><a href="#">箱包</a></dd>
+                                        <dd><a href="#">配饰</a></dd>
+                                        <dd><a href="#">运动户外</a></dd>
+                                        <dd><a href="#">母婴用品</a></dd>
+                                        <dd><a href="#">通知</a></dd>
+                                        <dd><a href="#">玩具</a></dd>
+                                        <dd><a href="#">工艺品</a></dd>
+                                        <dd><a href="#">宠物</a></dd>
+                                        <dd><a href="#">园艺</a></dd>
+                                        <dd><a href="#">日用百货</a></dd>
+                                        <dd><a href="#">办公文教</a></dd>
+                                        <dd><a href="#">汽车用品</a></dd>
+                                        <dd><a href="#">食品饮料</a></dd>
+                                        <dd><a href="#">餐饮生鲜</a></dd>
+                                        <dd><a href="#">家纺家饰</a></dd>
+                                        <dd><a href="#">家装建材</a></dd>
+                                        <dd><a href="#">美容化妆</a></dd>
+                                        <dd><a href="#">个护家清</a></dd>
+                                        <dd><a href="#">3C</a></dd>
+                                        <dd><a href="#">手机</a></dd>
+                                        <dd><a href="#">家电</a></dd>
+                                        <dd><a href="#">电工电气</a></dd>
+                                        <dd><a href="#">照片</a></dd>
+                                        <dd><a href="#">仪表</a></dd>
+                                        <dd><a href="#">包装</a></dd>
+                                        <dd><a href="#">印刷纸业</a></dd>
+                                        <dd><a href="#">电子元器件</a></dd>
+                                        <dd><a href="#">安防</a></dd>
+                                        <dd><a href="#">机械设备</a></dd>
+                                        <dd><a href="#">五金工具</a></dd>
+                                        <dd><a href="#">劳保</a></dd>
+                                        <dd><a href="#">橡胶原料</a></dd>
+                                        <dd><a href="#">化工原料</a></dd>
+                                        <dd><a href="#">精细化工</a></dd>
+                                        <dd><a href="#">钢材</a></dd>
+                                        <dd><a href="#">纺织皮革</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li2">
+                                    <dl>
+                                        <dt><a href="#">特色市场</a></dt>
+                                        <dd><a href="#">淘货源</a></dd>
+                                        <dd><a href="#">伙拼</a></dd>
+                                        <dd><a href="#">微商进货</a></dd>
+                                        <dd><a href="#">跨境专供</a></dd>
+                                        <dd><a href="#">进口货源</a></dd>
+                                        <dd><a href="#">工业品品牌站</a></dd>
+                                        <dd><a href="#">淘工厂</a></dd>
+                                        <dd><a href="#">源头好货</a></dd>
+                                        <dd><a href="#">实力优品</a></dd>
+                                        <dd><a href="#">产业带</a></dd>
+                                        <dd><a href="#">企业汇采</a></dd>
+                                        <dd class="lastdd"><a href="#">超级店</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li3">
+                                    <dl>
+                                        <dt>采购平台</dt>
+                                        <dd><a href="#">大企业采购</a></dd>
+                                        <dd class="lastdd"><a href="#">采购对接</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li4">
+                                    <dl>
+                                        <dt>以商会友</dt>
+                                        <dd><a href="#">行业资讯</a></dd>
+                                        <dd><a href="#">商友圈</a></dd>
+                                        <dd><a href="#">生意经</a></dd>
+                                        <dd><a href="#">阿里智库</a></dd>
+                                        <dd class="lastdd"><a href="#">1688商学院</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li5">
+                                    <dl>
+                                        <dt>常用工具</dt>
+                                        <dd><a href="#">商家工作台</a></dd>
+                                        <dd><a href="#">手机阿里买家版</a></dd>
+                                        <dd><a href="#">手机阿里卖家版</a></dd>
+                                        <dd><a href="#">阿里贷款</a></dd>
+                                        <dd><a href="#">阿里物流</a></dd>
+                                        <dd><a href="#">商机助理</a></dd>
+                                        <dd><a href="#">找货神器</a></dd>
+                                        <dd><a href="#">数字营销平台</a></dd>
+                                        <dd><a href="#">开放平台</a></dd>
+                                        <dd><a href="#">八载</a></dd>
+                                        <dd><a href="#">1688分销客</a></dd>
+                                        <dd><a href="#">1688创易秀</a></dd>
+                                        <dd class="lastdd"><a href="#">店小密</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="header_div8_li6">
+                                    <dl>
+                                        <dt>安全交易</dt>
+                                        <dd><a href="#">买家保障</a></dd>
+                                        <dd><a href="#">商家认证</a></dd>
+                                        <dd><a href="#">支付宝</a></dd>
+                                        <dd><a href="#">阿里网规</a></dd>
+                                        <dd class="lastdd"><a href="#">投诉举报</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                            <div class="header_div8_div">
+                                <h4><a href="#">更多内容 ></a></h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="search">
+            <div>
+                <h1><a href="../index.html"><img src="../images/board_logo.png" alt=""></a></h1>
+                <form action="">
+                    <input type="text" class="searchInput" value="电路板">
+                    <input type="submit" class="searchSubmit" value="搜索">
+                </form>
+                <img src="../images/board_search_img.png" alt="">
+            </div>
+        </div>
+        <div class="areYouFinding">
+            <span>您是否在找：</span>
+            <div>
+                <a href="#">pcb</a>
+                <a href="#">线路板</a>
+                <a href="#">pcb线路板</a>
+                <a href="#">铝基板</a>
+                <a href="#">pcb板</a>
+                <a href="#">线路板加工</a>
+                <a href="#">pcb打样</a>
+                <a href="#">电路板加工</a>
+                <a href="#">pcb线路板</a>
+                <a href="#">电路板设计</a>
+                <a href="#">柔性线路板</a>
+                <a href="#">led线路板</a>
+                <a href="#">高频板</a>
+                <a href="#">pcb抄板</a>
+                <a href="#">单面pcb</a>
+                <a href="#">pcb加工</a>
+                <a href="#">双面pcb</a>
+                <a href="#">加湿器线路板</a>
+                <a href="#">pcb快速打样</a>
+                <a href="#">usb线路板</a>
+                <a href="#">pcb设计</a>
+                <a href="#">电路板设计开发</a>
+                <a href="#">led电路板</a>
+                <a href="#">柔性电路板</a>
+                <a href="#">吸顶灯铝基板</a>
+                <a href="#">pcb抄板打样</a>
+                <a href="#">pcb板加工</a>
+                <a href="#">电子线路板</a>
+                <a href="#">铝基板打样</a>
+            </div>
+            <img src="../images/board_search_down.png" alt="">
+        </div>
+        <nav>
+            <div class="nav_zh">综合</div>
+            <div class="nav_price">
+                价格
+                <img src="../images/board_nav_down.png" alt="">
+            </div>
+            <div class="nav_location">
+                <span>所在地区</span>
+                <img src="../images/board_nav_down.png" alt="">
+                <div>
+                    <a href="#" class="allLocation">所有地区</a>
+                    <div class="nav_locationSwitch">
+                        <span style="width: 9px;"></span>
+                        <span style="width: 9px;border-left: none;"></span>
+                        <span style="width: 19px;border-left: none;"></span>
+                        <span style="width: 19px;border-left: none;"></span>
+                        <span style="width: 19px;border-left: none;"></span>
+                    </div>
+                    <span class="buyDistance">采购距离：</span>
+                    <a href="#" style="height: 37px;border-top: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-top: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-top: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-top: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-top: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-bottom: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-bottom: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-bottom: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-bottom: 1px solid #efefef;">地区</a>
+                    <a href="#" style="height: 37px;border-bottom: 1px solid #efefef;">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                    <a href="#">地区</a>
+                </div>
+            </div>
+            <div class="nav_priceInput">
+                <input type="text" placeholder="&yen;最低价" class="nav_minPriceInput">
+                <span>-</span>
+                <input type="text" placeholder="&yen;最高价" class="nav_maxPriceInput">
+                <input type="submit" value="确定" class="nav_InputSubmit">
+            </div>
+            <p>
+                <span style="color: #ff6000">"电路板"</span>
+                <span>的热销产品</span>
+            </p>
+        </nav>
+        <div class="content">
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-right: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-right: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-right: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-right: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p>
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-right: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-bottom: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-bottom: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-bottom: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-bottom: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-bottom: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+            <p style="margin-right: 0;margin-bottom: 0;">
+                <a href="detail.html"><img src="../images/board_content.png" alt=""></a>
+                <span class="content_name">pcb线路板厂家深圳pcb电路板加工...</span>
+                <span class="content_payProtection">交期保障</span>
+                <span class="content_payProtection" style="margin: 8px 100px 0 2px;">15天包换</span>
+                <span class="content_price_int">&yen;0</span>
+                <span class="content_price_float">.10</span>
+            </p>
+        </div>
+        <footer>
+            <div>
+                <img src="../images/board_footer_logo.png" alt="">
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>新手指南</dt>
+                            <dd style="margin-top: 10px;"><a href="#">了解1688</a></dd>
+                            <dd><a href="#">注册新用户</a></dd>
+                            <dd><a href="#">买家入门</a></dd>
+                            <dd><a href="#">卖家入门</a></dd>
+                            <dd><a href="#">绑定支付宝</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>采购商服务</dt>
+                            <dd style="margin-top: 10px;"><a href="#">找供应商</a></dd>
+                            <dd><a href="#">安装阿里旺旺</a></dd>
+                            <dd><a href="#">采购平台</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>供应商服务</dt>
+                            <dd style="margin-top: 10px;"><a href="#">诚信通服务</a></dd>
+                            <dd><a href="#">网销宝服务</a></dd>
+                            <dd><a href="#">卖家服务</a></dd>
+                            <dd><a href="#">物流服务</a></dd>
+                            <dd><a href="#">营销平台</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>阿里巴巴服务</dt>
+                            <dd style="margin-top: 10px;"><a href="#">客服中心</a></dd>
+                            <dd><a href="#">开放平台</a></dd>
+                            <dd><a href="#">1688商学院</a></dd>
+                            <dd><a href="#">24小时在线咨询</a></dd>
+                            <dd><a href="#">联系客服</a></dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>交易安全</dt>
+                            <dd style="margin-top: 10px;"><a href="#">交易维权攻略</a></dd>
+                            <dd><a href="#">买家防骗</a></dd>
+                            <dd><a href="#">卖家防骗</a></dd>
+                            <dd><a href="#">阿里规则</a></dd>
+                            <dd><a href="#">投诉举报</a></dd>
+                        </dl>
+                    </li>
+                    <li class="ia">
+                        <dl>
+                            <dt>
+                                <span>手机登陆：</span>
+                                <a href="https://m.1688.com">m.1688.com</a>
+                            </dt>
+                            <dd>
+                                <img src="../images/board_footer_ip.png" alt="">
+                                <span>iphone</span>
+                            </dd>
+                            <dd>
+                                <img src="../images/board_footer_ad.png" alt="">
+                                <span>Android</span>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="div707117">
+                    <a href="#" class="div707117_a">关于阿里巴巴</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">联系我们</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">欢迎合作</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">知识产权</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">著作权与商标声明</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">法律声明</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">服务条款</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">隐私声明</a><span class="div707117_span"> | </span>
+                    <a href="#" class="div707117_a">网站导航</a>
+                    <a href="#" class="div707117_zz">增值电信业务经营许可证:浙B2-20070066</a>
+                    <span class="div707117_zs">
+                        互联网药品信息服务资格证书:(浙)-经营性-2012-0009信息网络传播视听节目许可证:1109366
+                    </span>
+                    <span class="div707117_bq">
+                        © 2010-2015 1688.com 版权所有  互联网违法和不良信息举报中心:0571-81683755 blxx@list.alibaba-inc.com
+                    </span>
+                    <a href="#" class="footer_img"><img src="../images/board_footer_img1.png" alt=""></a>
+                    <a href="#" class="footer_img"><img src="../images/board_footer_img2.png" alt=""></a>
+                    <a href="#" class="footer_img"><img src="../images/board_footer_img3.png" alt=""></a>
+                    <a href="#" class="footer_img"><img src="../images/board_footer_img4.png" alt=""></a>
+                    <a href="#" class="footer_img"><img src="../images/board_footer_img5.png" alt=""></a>
+                    <a href="#" class="footer_img"><img src="../images/board_footer_img6.png" alt=""></a>
+                </div>
+            </div>
+        </footer>
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../js/board1.js"></script>
+        <script src="../js/board2.js"></script>
+    </body>
+</html>

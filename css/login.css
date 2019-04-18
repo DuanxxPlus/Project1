@@ -1,0 +1,285 @@
+header{
+    width: 1019px;
+    height: 60px;
+    margin: auto;
+}
+h1{
+    width: 161px;
+    height: 45px;
+    float: left;
+    border: 1px solid white;
+    border-radius: 2px;
+    margin: 15px 0 0 18px;
+}
+h1:hover{
+    border-color: #d9d9d9;
+}
+header>p{
+    font-size: 21px;
+    color: #666666;
+    padding: 5px 0 7px 10px;
+    line-height: 21px;
+    border-left: 1px solid #cccccc;
+    float: left;
+    margin: 22px 0 0 11px;
+    font-weight: bold;
+}
+main{
+    width: 1019px;
+    height: 403px;
+    margin: 27px auto 0;
+}
+main>a{
+    float: left;
+    margin: 3px 0 0 20px;
+}
+main>div{
+    width: 362px;
+    height: 403px;
+    float: right;
+}
+main h2{
+    width: 360px;
+    height: 32px;
+    border: 1px solid #e7a3dc;
+    background: #fffbdd;
+}
+main h2>img{
+    margin: 9px 0 0 13px;
+    float: left;
+}
+main h2>span{
+    font-size: 12px;
+    float: left;
+    color: #f27800;
+    line-height: 32px;
+    margin-left: 15px;
+}
+.passwordLogin{
+    width: 360px;
+    height: 312px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 51px;
+    display: none;
+}
+.passwordLogin>h3{
+    float: left;
+    font-size: 16px;
+    color: #666666;
+    margin: 35px 0 0 30px;
+    font-weight: bold;
+}
+.passwordLogin>img{
+    float: right;
+    margin: 5px 10px 0 0;
+    cursor: pointer;
+}
+form{
+    float: left;
+    width: 300px;
+    height: 166px;
+    margin: 21px 0 0 30px;
+}
+.usernameimg{
+    position: absolute;
+    top: 1px;
+    z-index: 2;
+    left: 1px;
+}
+form input{
+    width: 248px;
+    height: 40px;
+    padding-left: 50px;
+    border: 1px solid #dddddd;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.passwordimg{
+    position: absolute;
+    top: 63px;
+    z-index: 2;
+    left: 1px;
+}
+.loginButton{
+    width: 298px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ff4400;
+    background: #ff4400;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 37px;
+    color: white;
+    cursor: pointer;
+}
+.loginButton:hover{
+    background: #f52b00;
+    border-color: #f52b00;
+}
+.imgLogin{
+    width: 360px;
+    height: 350px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 51px;
+}
+.passwordLogin>span{
+    width: 205px;
+    float: left;
+    margin: 29px 0 0 135px;
+}
+.passwordLogin>span>a{
+    font-size: 12px;
+    line-height: 13px;
+    float: left;
+    margin-right: 15px;
+    text-decoration: none;
+    color: #6c6c6c;
+}
+.passwordLogin>span>a:hover{
+    color: #ff7300;
+}
+.login_img_logo{
+    float: right;
+    margin: 5px 0 0 154px;
+}
+.goToPassword{
+    float: right;
+    margin: 8px 10px 0 6px;
+    cursor: pointer;
+}
+.imgLogin>h3{
+    width: 150px;
+    float: left;
+    font-size: 16px;
+    color: #666666;
+    margin: 2px 0 0 30px;
+    font-weight: bold;
+}
+.imgLoginImg{
+    width: 250px;
+    height: 180px;
+    float: left;
+    margin: 18px 0 0 68px;
+}
+.imgLoginImg1{
+    position: absolute;
+    left: 62px;
+    top: 45px;
+}
+.imgLoginImg2{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+.imgLoginFoot{
+    float: left;
+    margin: 6px 0 0 82px;
+}
+.imgLogin span,.imgLogin a{
+    font-size: 12px;
+}
+.imgLogin>p{
+    float: left;
+    margin-left: 13px;
+    line-height: 18px;
+}
+.imgLogin>p>span{
+    color: #6c6c6c;
+}
+.imgLogin>p>a{
+    text-decoration: none;
+    color: #ff4400;
+}
+.imgLogin>span{
+    float: left;
+    font-size: 12px;
+    line-height: 13px;
+    color: #6c6c6c;
+    cursor: pointer;
+    margin: 20px 0 0 221px;
+}
+.imgLogin>span:hover,.imgLogin>a:hover{
+    color: #ff7300;
+}
+.imgLogin>a{
+    float: left;
+    font-size: 12px;
+    line-height: 13px;
+    color: #6c6c6c;
+    margin: 20px 0 0 13px;
+    text-decoration: none;
+}
+.kf{
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    right: 10px;
+    top: 200px;
+    background: url("../images/login_kf.png");
+}
+.kf:hover{
+    background: url("../images/login_kf2.png");
+}
+footer{
+    width: 1019px;
+    height: 118px;
+    margin: 53px auto 0;
+}
+footer>p{
+    line-height: 16px;
+    margin-left: 27px;
+}
+footer>p>img,footer>span>img{
+    float: left;
+}
+footer>p>a{
+    float: left;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+}
+footer>p>a:hover{
+    color: #ff7300;
+}
+footer>span{
+    float: right;
+    margin-right: 20px;
+}
+footer>span>a{
+    float: left;
+    font-size: 12px;
+    color: #0461af;
+    text-decoration: none;
+    line-height: 16px;
+}
+footer>span>a:hover{
+    color: #ff7300;
+}
+.footer{
+    width: 1019px;
+    height: 68px;
+    border-top: 3px solid #ff7300;
+    float: left;
+    margin-top: 12px;
+}
+.footer>p{
+    text-align: center;
+}
+.footer span{
+    font-size: 12px;
+    line-height: 13px;
+    color: #999999;
+}
+.footer a{
+    font-size: 12px;
+    line-height: 13px;
+    color: #333333;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: #ff7300;
+}

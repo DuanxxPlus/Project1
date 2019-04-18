@@ -1,0 +1,325 @@
+.inf{
+    width: 100%;
+    height: 68px;
+    border-bottom: 1px solid #ff7300;
+    background: #f6f6f6;
+}
+.inf>div{
+    width: 1186px;
+    height: 100%;
+    margin: auto;
+}
+h1{
+    float: left;
+    width: 108px;
+    height: 38px;
+    margin-top: 15px;
+}
+h1>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.company{
+    width: 430px;
+    height: 100%;
+    margin-left: 38px;
+    float: left;
+    cursor: pointer;
+}
+.company:hover>div{
+    height: 205px;
+}
+.company>h6{
+    float: left;
+    width: 181px;
+    height: 100%;
+}
+.companyName{
+    float: left;
+    margin-top: 12px;
+}
+.companyName>a{
+    font-size: 13px;
+    color: black;
+    line-height: 13px;
+}
+.companyName>a:hover{
+    color: #ff7300;
+}
+.cheng{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+}
+.one{
+    color: #d50000;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 2px 0 0 5px;
+}
+.year{
+    color: #888888;
+    float: left;
+    font-size: 12px;
+    margin: 2px 0 0 2px;
+}
+.wangwang{
+    width: 31px;
+    height: 22px;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 4px;
+    margin-left: 9px;
+}
+.companyImg{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 2px 0 0 9px;
+}
+.company>ul{
+    width: 185px;
+    height: 38px;
+    float: left;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    margin: 15px 0 0 11px;
+}
+.company>ul>li{
+    width: 46px;
+    height: 100%;
+    float: left;
+}
+.company_ul_title{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    color: #888888;
+    line-height: 19px;
+    text-align: center;
+}
+.company_ul_value{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    color: red;
+    line-height: 19px;
+    text-align: center;
+}
+.company>span{
+    float: right;
+    width: 11px;
+    height: 6px;
+    margin-top: 20px;
+}
+.company>div{
+    position: absolute;
+    top: 69px;
+    background: white;
+    width: 430px;
+    height: 0;
+    border: 1px solid #eaeaea;
+    z-index: 2;
+    cursor: auto;
+    transition: all 150ms;
+    overflow: hidden;
+}
+.company>div>p{
+    width: 410px;
+    height: 16px;
+    margin: 20px 0 0 20px;
+    float: left;
+}
+.company>div>p>a{
+    font-size: 12px;
+    line-height: 16px;
+    float: left;
+}
+.cd_companyName{
+    color: #555555;
+    float: left;
+}
+.cd_companyName:hover{
+    color: #ff7300;
+}
+.cd_cheng{
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 9px;
+}
+.cd_one{
+    color: #dd0052;
+    font-weight: bold;
+    margin-left: 7px;
+}
+.cd_year{
+    color: #888888;
+    margin-left: 3px;
+}
+.cd_img{
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.company>div>ul{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    margin-top: 28px;
+}
+.cd_ul1{
+    height: 100px;
+    padding-left: 20px;
+}
+.cd_ul1>li{
+    width: 100%;
+    height: 25px;
+}
+.cd_ul1>li>span{
+    font-size: 12px;
+    line-height: 25px;
+    float: left;
+}
+.cd_ul1_name{
+    color: #777777;
+}
+.cd_ul1_value{
+    color: #333333;
+}
+.cd_ul2{
+    padding-right: 35px;
+}
+.cd_ul2 span,.cd_ul2 a{
+    font-size: 12px;
+    line-height: 25px;
+}
+.cd_ul2_name{
+    color: #333333;
+    float: left;
+}
+.cd_ul2_value{
+    color: #888888;
+    float: right;
+    width: 97px;
+}
+.cd_ul2_value1{
+    float: left;
+    color: #888888;
+}
+#cd_ul2_value1:hover>#cd_ul2_value11,#cd_ul2_value2:hover>#cd_ul2_value21{
+    color: red;
+}
+.cd_ul2_value2{
+    float: left;
+    color: red;
+    margin-left: 5px;
+}
+.cd_ul2_value3{
+    float: left;
+    color: red;
+    margin-left: 11px;
+}
+#cd_ul2_value3:hover>#cd_ul2_value31{
+    color: green;
+}
+#reFace{
+    font-weight: bold;
+    margin-left: 35px;
+    color: black;
+}
+#reFace:hover{
+    text-decoration: underline;
+}
+.er{
+    width: 24px;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding-top: 22px;
+}
+.er>a{
+    width: 24px;
+    height: 24px;
+}
+.er:hover>.erweima{
+    display: block;
+}
+.erweima{
+    width: 140px;
+    height: 155px;
+    display: none;
+    position: absolute;
+    top: 69px;
+    z-index: 2;
+}
+.shoucang{
+    width: 68px;
+    height: 17px;
+    float: left;
+    margin: 25px 0 0 14px;
+    background: url("../images/shoucang.png");
+}
+.shoucang:hover{
+    background: url("../images/shoucang2.png");
+}
+.inf form{
+    width: 390px;
+    height: 36px;
+    margin-top: 15px;
+    float: right;
+}
+.inf_searchInput{
+    width: 237px;
+    height: 36px;
+    border: 2px solid #dddddd;
+    border-right: none;
+    padding-left: 10px;
+    outline: none;
+    float: left;
+    box-sizing: border-box;
+}
+.inf_searchInput:focus{
+    border-color: #ff7300;
+}
+.inf_this{
+    float: left;
+    width: 80px;
+    height: 36px;
+    outline: none;
+    cursor: pointer;
+    background: #ff7300;
+    border: none;
+    font-size: 14px;
+    color: white;
+    transition: all 350ms;
+}
+.inf_this:hover{
+    background: #ff500b;
+}
+.inf_all{
+    float: right;
+    width: 68px;
+    height: 36px;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #ff7300;
+    font-size: 14px;
+    color: #ff7300;
+    transition: all 350ms;
+}
+.inf_all:hover{
+    background: white;
+}
+h2{
+    width: 100%;
+    height: 200px;
+    background: url("../images/companyLogo.png") no-repeat;
+}
